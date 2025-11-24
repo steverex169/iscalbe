@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-testimonial {
+    width: 100%;
+    max-width: 1000px;
+    margin: 250px auto 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.main-testimonial>h1 {
+    font-size: 55px;
+    max-width: 650px;
+    text-align: center;
+}
+
+.main-testimonial>.row-test-card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 320px) {
+    .main-testimonial{
+        max-width: 300px;
+    }
+    .main-testimonial>h1{
+        font-size: 25px;
+        max-width: 250px;
+    }
+    .main-testimonial>.row-test-card{
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+    .main-testimonial{
+        max-width: 300px;
+    }
+    .main-testimonial>h1{
+        font-size: 30px;
+        max-width: 350px;
+    }
+    .main-testimonial>.row-test-card{
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 450px) {
+    .main-testimonial{
+        max-width: 400px;
+    }
+    .main-testimonial>h1{
+        font-size: 35px;
+        max-width: 350px;
+    }
+    .main-testimonial>.row-test-card{
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    .main-testimonial{
+        max-width: 540px;
+    }
+    .main-testimonial>h1{
+        font-size: 45px;
+    }
+    .main-testimonial>.row-test-card{
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+    .main-testimonial{
+        max-width: 720px;
+    }
+    .main-testimonial>.row-test-card{
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+    .main-testimonial{
+        max-width: 860px;
+    }
+    .main-testimonial>.row-test-card{
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .main-testimonial {
+        max-width: 1200px;
+    }
+
+    .main-testimonial>h1 {
+        font-size: 55px;
+        max-width: 650px;
+        text-align: center;
+    }
+
+    .main-testimonial>.row-test-card {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}

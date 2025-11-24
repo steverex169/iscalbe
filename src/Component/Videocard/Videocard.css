@@ -1,0 +1,223 @@
+.Video-main-box {
+    width: 593px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: linear-gradient(#737373, #0F0F0F);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden; /* ensures no overflow */
+}
+
+.Video-main-box > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Title */
+.Video-main-box > .video-h1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    left: 50px;    
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Progress bar container */
+/* Progress bar container */
+.Video-main-box > .video-bar {
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: sans-serif;
+  z-index: 1;
+  position: absolute;
+  top: 80%;
+  width: 420px;
+  height: 14px;
+  left: 40px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.video-bar input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  outline: none;
+  border-radius: 4px;
+}
+
+/* Track (base line + progress) */
+.video-bar input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #4ade80 var(--progress, 0%),
+    #1a1a1a var(--progress, 0%)
+  );
+  border-radius: 4px;
+}
+.video-bar input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #4ade80 var(--progress, 0%),
+    #1a1a1a var(--progress, 0%)
+  );
+  border-radius: 4px;
+}
+
+/* Thumb (circle) */
+.video-bar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  background: #4ade80; /* ✅ green */
+  border-radius: 50%;
+  border: none; /* removes black border */
+  margin-top: -5px; /* centers circle on line */
+  cursor: pointer;
+}
+.video-bar input[type="range"]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  background: #4ade80; /* ✅ green */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Play button */
+.Video-main-box > .play {
+    width: 81px;
+    height: 81px;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover effect shows everything */
+.Video-main-box:hover > .video-h1,
+.Video-main-box:hover > .video-bar,
+.Video-main-box:hover > .play {
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 320px){
+    .Video-main-box{
+        width: 300px;
+        height: 180px;
+    }
+    .Video-main-box>.play{
+        width: 50px;
+        height: 50px;
+    }
+    .Video-main-box>.video-bar{
+        left: 20px;
+        width: 310px;
+    }
+    .Video-main-box>.video-h1{
+        font-size: 15px;
+        left: 30px;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 328px){
+    .Video-main-box{
+        width: 300px;
+        height: 200px;
+    }
+    .Video-main-box>.play{
+        width: 60px;
+        height: 60px;
+    }
+    .Video-main-box>.video-bar{
+        left: 20px;
+        width: 310px;
+    }
+    .Video-main-box>.video-h1{
+        font-size: 16px;
+        left: 30px;
+    }
+}
+@media only screen and (min-width: 329px) and (max-width: 450px){
+    .Video-main-box{
+        width: 350px;
+        height: 200px;
+    }
+    .Video-main-box>.play{
+        width: 60px;
+        height: 60px;
+    }
+    .Video-main-box>.video-bar{
+        left: 20px;
+        width: 310px;
+    }
+    .Video-main-box>.video-h1{
+        font-size: 16px;
+        left: 30px;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 768px){
+    .Video-main-box{
+        width: 350px;
+        height: 200px;
+    }
+    .Video-main-box>.play{
+        width: 70px;
+        height: 70px;
+    }
+    .Video-main-box>.video-bar{
+        left: 20px;
+        width: 310px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 931px){
+    .Video-main-box{
+        width: 370px;
+        height: 230px;
+    }
+    .Video-main-box>.play{
+        width: 70px;
+        height: 70px;
+    }
+    .Video-main-box>.video-bar{
+        left: 20px;
+        width: 330px;
+    }
+}
+@media only screen and (min-width: 932px) and (max-width: 1024px){
+    .Video-main-box{
+        width: 400px;
+        height: 250px;
+    }
+    .Video-main-box>.play{
+        width: 70px;
+        height: 70px;
+    }
+}

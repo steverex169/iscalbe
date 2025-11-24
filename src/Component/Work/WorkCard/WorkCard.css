@@ -1,0 +1,133 @@
+.analyze-card {
+  background-color: #000;
+  color: #fff;
+  width: 416px;
+  border-radius: 20px;
+  height: 445hpx;
+  padding: 40px 35px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.analyze-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.analyze-header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.day-tag {
+  background-color: #00ff75;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.description {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #e6e6e6;
+  font-size: 16px;
+}
+
+.check-icon {
+  color: #00ff75;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  .analyze-card{
+    width: 100%;
+    height: auto;
+  }
+  .analyze-header>h2 {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+  .analyze-card{
+    width: 100%;
+    height: auto;
+  }
+  .analyze-header>h2 {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 450px) {
+  .analyze-card{
+    width: 100%;
+    height: auto;
+  }
+  .analyze-header>h2 {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+  .analyze-card {
+    width: 225px;
+    height: 558px;
+  }
+
+  .analyze-header>h2 {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+  .day-tag {
+    padding: 5px 10px;
+  }
+  .description{
+    font-size: 12px;
+  }
+  .checklist>li{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+  .analyze-card {
+    width: 300px;
+    height: 558px;
+  }
+
+  .analyze-header>h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+  .analyze-card {
+    width: 350px;
+  }
+}

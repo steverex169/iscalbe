@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-work {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.main-work>.work-logo {
+    width: 150px;
+    height: 31px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.main-work>.work-logo>.work-box1 {
+    width: 8px;
+    height: 17px;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.main-work>.work-logo>.work-box2 {
+    width: 8px;
+    height: 11px;
+    z-index: 1;
+    position: absolute;
+    left: -10px;
+    top: 11px;
+    background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.main-work>.work-logo>.work-box3 {
+    width: 8px;
+    height: 6px;
+    z-index: 1;
+    position: absolute;
+    left: -20px;
+    top: 16px;
+    background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.main-work>h1 {
+    margin-top: 120px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.main-work>.work-card-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.promo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 60px 80px;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 80px auto;
+    box-sizing: border-box;
+}
+
+.promo-left {
+    flex: 1;
+}
+
+.promo-left h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: #EBFFF2;
+}
+
+.promo-btn {
+    background-color: #6dfb9f;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 28px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 6px 6px 0px white;
+}
+
+.promo-btn:hover {
+    background-color: #58e58a;
+    transform: translateY(-2px);
+}
+
+.promo-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-right img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .promo-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .promo-right {
+    margin-top: 40px;
+  }
+
+  .promo-left h1 {
+    font-size: 38px;
+  }
+} */
+@media only screen and (max-width: 320px) {
+    .main-work {
+        max-width: 280px;
+        height: auto;
+    }
+
+    .main-work>h1 {
+        font-size: 30px;
+        margin-top: 120px;
+    }
+
+    .main-work>.work-des {
+        width: 200px;
+        margin-top: 10px;
+    }
+    .promo-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        width: 220px;
+        border: 1px solid rgb(255, 104, 104);
+        overflow: hidden;
+    }
+
+    .promo-left>h1 {
+        font-size: 25px;
+    }
+
+    .promo-btn {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+    .main-work {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .main-work>h1 {
+        font-size: 45px;
+        margin-top: 120px;
+    }
+
+    .main-work>.work-des {
+        width: 280px;
+        margin-top: 10px;
+    }
+    .promo-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .promo-left>h1 {
+        font-size: 30px;
+    }
+
+    .promo-btn {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 450px) {
+    .main-work {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .main-work>h1 {
+        font-size: 45px;
+        margin-top: 120px;
+    }
+
+    .main-work>.work-des {
+        width: 280px;
+        margin-top: 10px;
+    }
+
+    .main-work>.work-card-main {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .promo-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .promo-left>h1 {
+        font-size: 30px;
+    }
+
+    .promo-btn {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    .main-work {
+        max-width: 540px;
+        height: auto;
+    }
+
+    .main-work>h1 {
+        font-size: 45px;
+    }
+
+    .main-work>.work-des {
+        width: 280px;
+        margin-top: 10px;
+    }
+
+    .main-work>.work-card-main {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .promo-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .promo-right {
+        margin-top: 40px;
+    }
+
+    .promo-left h1 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+    .main-work {
+        max-width: 720px;
+        height: auto;
+    }
+
+    .main-work>h1 {
+        font-size: 60px;
+    }
+
+    .main-work>.work-des {
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .promo-left>h1 {
+        font-size: 30px;
+    }
+
+    .promo-btn {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+    .main-work {
+        max-width: 860px;
+        height: auto;
+    }
+
+    .main-work>h1 {
+        font-size: 60px;
+    }
+
+    .main-work>.work-des {
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .promo-left>h1 {
+        font-size: 30px;
+    }
+
+    .promo-btn {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .promo-section {
+        width: 100%;
+    }
+}

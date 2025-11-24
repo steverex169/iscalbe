@@ -1,0 +1,138 @@
+.lastPart {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 150px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  font-family: "PP Telegraf", sans-serif;
+  height: 100%;
+}
+
+/* Left Section */
+.lastPart-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+}
+
+.lastPart-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lastPart-bar {
+  width: 6px;
+  border-radius: 2px;
+}
+
+.lastPart-bar1 {
+  margin-top: 5px;
+    width: 8px;
+    height: 10px;
+    background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.lastPart-bar2 {
+  margin-top: 2px;
+  width: 8px;
+  height: 14px;
+  background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.lastPart-bar3 {
+  width: 8px;
+  height: 17px;
+  background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.lastPart-brand-text {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.lastPart-desc {
+  font-size: 13px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  max-width: 240px;
+}
+
+/* Right Section */
+.lastPart-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lastPart-heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: #cfcfcf;
+  letter-spacing: 1px;
+}
+
+.lastPart-links-columns {
+  display: flex;
+  gap: 80px;
+}
+
+.lastPart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lastPart-list li {
+  font-size: 13px;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.lastPart-list li:hover {
+  color: #6dfb9f;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .lastPart {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 50px;
+    height: auto;
+  }
+
+  .lastPart-left {
+    align-items: flex-start;
+  }
+
+  .lastPart-links-columns {
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .lastPart {
+    /* flex-direction: column; */
+    padding: 60px 40px;
+    gap: 50px;
+    height: auto;
+  }
+
+  .lastPart-left {
+    align-items: flex-start;
+  }
+
+  .lastPart-links-columns {
+    gap: 40px;
+  }
+}

@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PP Telegraf", sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+/* Img for hero bg */
+.hero>.hero-img-1 {
+    position: absolute;
+    width: 177.761px;
+    height: 99.99px;
+    flex-shrink: 0;
+    aspect-ratio: 177.76/99.99;
+    top: 0;
+    right: 30px;
+    filter: blur(2px);
+    transform: rotate(13.464deg);
+    z-index: -1;
+}
+
+.hero>.hero-img-2 {
+    position: absolute;
+    width: 177.761px;
+    height: 99.99px;
+    flex-shrink: 0;
+    aspect-ratio: 177.76/99.99;
+    top: 35%;
+    left: 30px;
+    filter: blur(2px);
+    transform: rotate(-13.464deg);
+    z-index: -1;
+}
+
+.hero>.hero-img-3 {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    flex-shrink: 0;
+    aspect-ratio: 177.76/99.99;
+    top: 35%;
+    right: 0px;
+    transform: rotate(-13.464deg);
+    z-index: -1;
+}
+
+.hero>.hero-img-4 {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    flex-shrink: 0;
+    aspect-ratio: 177.76/99.99;
+    top: 52%;
+    left: 0px;
+    transform: rotate(13.464deg);
+    z-index: -1;
+}
+
+.hero>.hero-img-5 {
+    position: absolute;
+    width: 209px;
+    height: 117px;
+    transform: rotate(-13.464deg);
+    top: 75%;
+    right: 0px;
+    filter: blur(2px);
+}
+
+.hero>.hero-img-6 {
+    position: absolute;
+    width: 209px;
+    height: 117px;
+    transform: rotate(-13.464deg);
+    top: 90%;
+    left: 0px;
+    filter: blur(2px);
+}
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        max-width: 280px;
+    }
+
+    .hero>.hero-img-1 {
+        width: 80px;
+        height: 70px;
+        right: 0;
+        top: 20px;
+    }
+
+    .hero>.hero-img-2 {
+        top: 25%;
+        left: 0;
+        width: 80px;
+        height: 70px;
+    }
+
+    .hero>.hero-img-3 {
+        top: 42%;
+        width: 70px;
+        height: 60px;
+        right: -14px;
+    }
+
+    .hero>.hero-img-4 {
+        top: 55%;
+        width: 80px;
+        height: 60px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 76%;
+        width: 80px;
+        height: 80px;
+        z-index: -1;
+    }
+
+    .hero>.hero-img-6 {
+        top: 100%;
+        left: 0;
+        width: 100px;
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+
+    .hero {
+        max-width: 350px;
+    }
+
+    .hero>.hero-img-1 {
+        width: 80px;
+        height: 60px;
+        top: 30px;
+        right: 0;
+    }
+
+    .hero>.hero-img-2 {
+        top: 22%;
+        left: 0;
+        width: 80px;
+        height: 60px;
+    }
+
+    .hero>.hero-img-3 {
+        top: 42%;
+        width: 80px;
+        height: 70px;
+        right: -5px;
+    }
+
+    .hero>.hero-img-4 {
+        top: 52%;
+        width: 100px;
+        height: 70px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 77%;
+        right: 5px;
+        width: 80px;
+        height: 80px;
+        z-index: -1;
+    }
+
+    .hero>.hero-img-6 {
+        top: 100%;
+        left: 0;
+        width: 100px;
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        max-width: 400px;
+    }
+
+    .hero>.hero-img-1 {
+        width: 80px;
+        height: 60px;
+        top: 30px;
+        right: 0;
+    }
+
+    .hero>.hero-img-2 {
+        top: 22%;
+        left: 0;
+        width: 100px;
+    }
+
+    .hero>.hero-img-3 {
+        top: 45%;
+        width: 100px;
+        height: 70px;
+    }
+
+    .hero>.hero-img-4 {
+        top: 57%;
+        width: 100px;
+        height: 70px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 80%;
+        right: 5px;
+        width: 100px;
+        height: 70px;
+        z-index: -1;
+    }
+
+    .hero>.hero-img-6 {
+        top: 100%;
+        left: 0;
+        width: 100px;
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    .hero {
+        max-width: 540px;
+    }
+
+    .hero>.hero-img-1 {
+        width: 100px;
+        height: 80px;
+        top: 30px;
+    }
+
+    .hero>.hero-img-2 {
+        top: 28%;
+        left: 0;
+        width: 120px;
+    }
+
+    .hero>.hero-img-3 {
+        top: 42%;
+        width: 150px;
+        height: 90px;
+    }
+
+    .hero>.hero-img-4 {
+        top: 52%;
+        width: 150px;
+        height: 90px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 75%;
+        right: -30px;
+        width: 150px;
+        height: 90px;
+    }
+
+    .hero>.hero-img-6 {
+        top: 100%;
+        left: 0;
+        width: 150px;
+        height: 80px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+
+    .hero {
+        max-width: 720px;
+    }
+
+    .hero>.hero-img-1 {
+        width: 120px;
+        height: 100px;
+        right: 40px;
+        top: 10px;
+    }
+
+    .hero>.hero-img-2 {
+        top: 28%;
+        width: 130px;
+    }
+
+    .hero>.hero-img-3 {
+        top: 40%;
+        width: 180px;
+        height: 100px;
+    }
+
+    .hero>.hero-img-4 {
+        top: 55%;
+        width: 200px;
+        height: 120px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 75%;
+        width: 140px;
+        height: 100px;
+    }
+
+    .hero>.hero-img-6 {
+        top: 100%;
+        width: 120px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+
+    .hero {
+        max-width: 860px;
+    }
+
+    .hero>.hero-img-2 {
+        top: 30%;
+        left: 0;
+    }
+
+    .hero>.hero-img-3 {
+        top: 38%;
+        width: 220px;
+        height: 140px;
+    }
+
+    .hero>.hero-img-4 {
+        top: 54%;
+        width: 250px;
+        height: 150px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 75%;
+        width: 180px;
+    }
+
+    .hero>.hero-img-6 {
+        top: 100%;
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .hero {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero>.hero-img-1 {
+        top: 8px;
+        right: 10%;
+    }
+
+    .hero>.hero-img-2 {
+        top: 40%;
+        left: 5%;
+    }
+
+    .hero>.hero-img-3 {
+        top: 39%;
+        right: 10px;
+        width: 357.761px;
+        height: 201.99px;
+    }
+
+    .hero>.hero-img-4 {
+        top: 53%;
+        left: 0px;
+        width: 350.761px;
+        height: 201.99px;
+    }
+
+    .hero>.hero-img-5 {
+        position: absolute;
+        width: 209px;
+        height: 117px;
+        transform: rotate(-13.464deg);
+        top: 75%;
+        right: 8%;
+        filter: blur(2px);
+    }
+
+    .hero>.hero-img-6 {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        transform: rotate(13.464deg);
+        top: 100%;
+        left: 60px;
+        filter: blur(2px);
+    }
+}
+
+
+
+
+
+
+/* For Iphone Media queries */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 328px) and (max-width: 428px) {
+    .hero>.hero-img-1{
+        width: 100px;
+        height: 60px;
+        top:10px;
+    }
+    .hero>.hero-img-2{
+        width: 100px;
+        height: 60px;
+        top: 25%;
+    }
+    .hero>.hero-img-3{
+        width: 100px;
+        height: 70px;
+        right: 25px;
+        top: 45%;
+    }
+    .hero>.hero-img-4{
+        width: 100px;
+        height: 70px;
+        left: 30px;
+        top: 56%;
+    }
+    .hero>.hero-img-5{
+        width: 100px;
+        height: 70px;
+        top: 78%;
+        right: 20px;
+    }
+    .hero>.hero-img-6{
+        width: 100px;
+        height: 70px;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 328px) and (max-width: 428px) {
+    .hero>.hero-img-1{
+        width: 100px;
+        height: 60px;
+        top:10px;
+    }
+    .hero>.hero-img-2{
+        width: 100px;
+        height: 60px;
+        top: 25%;
+    }
+    .hero>.hero-img-3{
+        width: 100px;
+        height: 70px;
+        right: 25px;
+        top: 45%;
+    }
+    .hero>.hero-img-4{
+        width: 100px;
+        height: 70px;
+        left: 30px;
+        top: 56%;
+    }
+    .hero>.hero-img-5{
+        width: 100px;
+        height: 70px;
+        top: 78%;
+        right: 20px;
+    }
+    .hero>.hero-img-6{
+        width: 100px;
+        height: 70px;
+    }
+}

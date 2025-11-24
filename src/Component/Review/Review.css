@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-review {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    background: #F5F5F5;
+}
+
+.main-review {
+    border: 1px solid #E2E2E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 449px;
+    position: absolute;
+    background: white;
+    border-radius: 58px;
+    box-shadow: 0 0 20px #41414140;
+    gap: 35px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 860px;
+}
+
+.main-review>.star-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.main-review>h2 {
+    font-size: 50px;
+}
+
+.main-review>p {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 735px;
+    text-align: center;
+    line-height: 130%;
+}
+
+.main-review>.review-footer {
+    width: 424px;
+    height: 65px;
+    background: #6DFB9F;
+    font-size: 19px;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 800;
+    box-shadow: 6px 6px black;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 320px) {
+    .main-review{
+        width: 300px;
+        height: 380px;
+        border-radius: 50px;
+    }
+    .main-review>.star-row{
+        width: 300px;
+    }
+    .star-row>.star{
+        width: 35px;
+    }
+    .main-review>h2{
+        font-size: 25px;
+    }
+    .main-review>p{
+        font-size: 15px;
+        max-width: 250px;
+    }
+    .main-review>.review-footer{
+        width: 250px;
+        font-size: 13px;
+        height: 45px;
+        padding: 17px 0;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+    .main-review{
+        width: 300px;
+        height: 380px;
+        border-radius: 50px;
+    }
+    .main-review>.star-row{
+        width: 300px;
+    }
+    .star-row>.star{
+        width: 35px;
+    }
+    .main-review>h2{
+        font-size: 25px;
+    }
+    .main-review>p{
+        font-size: 15px;
+        max-width: 250px;
+    }
+    .main-review>.review-footer{
+        width: 250px;
+        font-size: 13px;
+        height: 45px;
+        padding: 17px 0;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 450px) {
+    .main-review{
+        width: 300px;
+        height: 380px;
+    }
+    .main-review>.star-row{
+        width: 300px;
+    }
+    .star-row>.star{
+        width: 30px;
+    }
+    .main-review>h2{
+        font-size: 25px;
+    }
+    .main-review>p{
+        font-size: 13px;
+        max-width: 250px;
+    }
+    .main-review>.review-footer{
+        width: 250px;
+        font-size: 12px;
+        height: 45px;
+        padding: 17px 0;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    .main-review{
+        width: 500px;
+        height: 410px;
+    }
+    .main-review>.star-row{
+        width: 450px;
+    }
+    .star-row>.star{
+        width: 54px;
+    }
+    .main-review>h2{
+        font-size: 40px;
+    }
+    .main-review>p{
+        font-size: 15px;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+    .main-review{
+        width: 600px;
+    }
+    .main-review>.star-row{
+        width: 450px;
+    }
+    .main-review>h2{
+        font-size: 45px;
+    }
+    .main-review>p{
+        font-size: 18px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+    .main-review{
+        width: 760px;
+    }
+    .main-review>.star-row{
+        width: 450px;
+    }
+    .main-review>h2{
+        font-size: 45px;
+    }
+    .main-review>p{
+        font-size: 18px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .main-review {
+        width: 1106px;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 58px;
+        height: 489px;
+        padding: 40px;
+    }
+
+    .main-review>h2 {
+        font-size: 55px;
+    }
+
+    .main-review>p {
+        font-size: 25px;
+        font-weight: 400;
+        max-width: 735px;
+        text-align: center;
+        line-height: 130%;
+    }
+
+    .main-review>.review-footer {
+        width: 424px;
+        height: 65px;
+        background: #6DFB9F;
+        font-size: 19px;
+        text-align: center;
+        padding: 25px 0;
+        font-weight: 800;
+        box-shadow: 6px 6px black;
+        border-radius: 6px;
+    }
+}

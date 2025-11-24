@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap-case-content {
+    width: 100%;
+    background: #F5F5F5;
+    height: auto;
+}
+
+.wrap-case-content>.main-case {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+
+.main-case>.top-case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.top-case>h2 {
+    font-size: 50px;
+}
+
+.top-case>p {
+    font-size: 20px;
+    max-width: 800px;
+    font-weight: 400;
+}
+.main-case>.bottom-case{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.main-case>.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 35px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.pagination>.number-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.number-slider>li{
+    list-style-type: none;
+}
+.number-slider>#n-1{
+    border: 1px solid #E2E2E2;
+    padding: 5px 10px;
+    background: #E2E2E2;
+}
+.number-slider>#n-2,
+.number-slider>#n-3{
+    color: #a1a1a1;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+}
+.number-slider>#n-2:hover,
+.number-slider>#n-3:hover{
+    border-color: #E2E2E2;
+    background: #E2E2E2;
+}
+.pagination>button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+button>.next{
+    font-size: 15px;
+    color: #a1a1a1;
+}
+@media only screen and (max-width: 320px) {
+    .wrap-case-content>.main-case {
+        max-width: 280px;
+    }
+
+    .top-case>h2 {
+        font-size: 30px;
+    }
+
+    .top-case>p {
+        font-size: 15px;
+        max-width: 650px;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+    .wrap-case-content>.main-case {
+        max-width: 300px;
+    }
+
+    .top-case>h2 {
+        font-size: 45px;
+    }
+
+    .top-case>p {
+        font-size: 18px;
+        max-width: 650px;
+    }
+    .main-case>.bottom-case{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 428px) {
+    .wrap-case-content>.main-case {
+        max-width: 400px;
+    }
+
+    .top-case>h2 {
+        font-size: 45px;
+    }
+
+    .top-case>p {
+        font-size: 18px;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 428px) and (max-width: 450px) {
+    .wrap-case-content>.main-case {
+        max-width: 400px;
+    }
+
+    .top-case>h2 {
+        font-size: 45px;
+    }
+
+    .top-case>p {
+        font-size: 18px;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    .wrap-case-content>.main-case {
+        max-width: 540px;
+    }
+
+    .top-case>h2 {
+        font-size: 45px;
+    }
+
+    .top-case>p {
+        font-size: 20px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+    .wrap-case-content>.main-case {
+        max-width: 650px;
+    }
+
+    .top-case>h2 {
+        font-size: 45px;
+    }
+
+    .top-case>p {
+        font-size: 20px;
+        max-width: 650px;
+    }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+    .wrap-case-content>.main-case {
+        max-width: 860px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .wrap-case-content>.main-case {
+        max-width: 1200px;
+        height: auto;
+    }
+
+    .top-case>h2 {
+        font-size: 55px;
+    }
+
+    .top-case>p {
+        font-size: 25px;
+        font-weight: 400;
+        max-width: 889px;
+    }
+}
+
+
+
+
+
+
+/* For Iphone Media queries */
+/* @supports (-webkit-touch-callout: none) {
+    @media only screen and (min-width: 328px) and (max-width: 428px) {
+        .top-case>h2 {
+            color: blue;
+        }
+    }
+
+    @media only screen and (min-width: 429px) and (max-width: 450px) {
+        .top-case>h2 {
+            color: blue;
+        }
+    }
+}

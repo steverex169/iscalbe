@@ -1,0 +1,96 @@
+.testimonial-card {
+  width: 220px;
+  height: 333px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 6px 6px 0 rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  font-family: "PP Telegraf", sans-serif;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.circle-logo {
+  width: 46px;
+  height: 46px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "PP Telegraf", sans-serif;
+  padding: 0 10px 0 10px;
+}
+.testimonial-title{
+  position: relative;
+}
+.testimonial-title h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.testimonial-title p {
+  font-size: 12px;
+  color: #888;
+  margin-left: 15px;
+}
+.testimonial-title>.verify{
+    color: black;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+    font-size: 12px;
+}
+.testimonial-quote {
+  font-size: 17px;
+  color: #111;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+.highlight {
+  color: #00c46a;
+  font-weight: 600;
+}
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (min-width: 321px) and (max-width: 376px) {}
+
+@media only screen and (min-width: 377px) and (max-width: 426px) {}
+
+@media only screen and (min-width: 427px) and (max-width: 768px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 968px) {}
+
+@media only screen and (min-width: 969px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .testimonial-card{
+        width: 232px;
+    }
+}

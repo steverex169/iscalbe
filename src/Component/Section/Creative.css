@@ -1,0 +1,178 @@
+.creative-wrapper{
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    margin-top: 200px;
+    border: 2px solid transparent;
+}
+.creative-wrapper>.Creative{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    gap: 30px;
+    padding-top: 200px;
+}
+.Creative>.creative-h2{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 800;
+}
+.Creative>.creative-p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 524px;
+    text-align: center;
+    line-height: 139%;
+}
+.Creative>.row-video-card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.Creative>.dashboard-card-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+@media only screen and (max-width: 320px){
+    .creative-wrapper>.Creative{
+        max-width: 250px;
+    }
+    .Creative>.creative-h2{
+        font-size: 25px;
+    }
+    .Creative>.creative-p{
+        font-size: 12px;
+        max-width: 400px;
+    }
+    .Creative>.row-video-card{
+        flex-direction: column;
+        height: auto;
+    }
+    .Creative>.dashboard-card-row{
+        flex-direction: column;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 328px){
+    .creative-wrapper>.Creative{
+        max-width: 300px;
+    }
+    .Creative>.creative-h2{
+        font-size: 30px;
+    }
+    .Creative>.creative-p{
+        font-size: 13px;
+        max-width: 400px;
+    }
+    .Creative>.row-video-card{
+        flex-direction: column;
+        height: auto;
+    }
+    .Creative>.dashboard-card-row{
+        flex-direction: column;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 329px) and (max-width: 450px){
+    .creative-wrapper>.Creative{
+        max-width: 350px;
+    }
+    .Creative>.creative-h2{
+        font-size: 35px;
+    }
+    .Creative>.creative-p{
+        font-size: 15px;
+        max-width: 400px;
+    }
+    .Creative>.row-video-card{
+        flex-direction: column;
+        height: auto;
+    }
+    .slide-container{
+        width: 100%;
+        border: 1px solid red;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .Creative>.dashboard-card-row{
+        flex-direction: column;
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 768px){
+    .creative-wrapper>.Creative{
+        max-width: 540px;
+    }
+    .Creative>.creative-h2{
+        font-size: 40px;
+    }
+    .Creative>.creative-p{
+        font-size: 17px;
+        max-width: 350px;
+    }
+    .Creative>.dashboard-card-row{
+        flex-direction: row;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 931px){
+    .creative-wrapper>.Creative{
+        max-width: 720px;
+    }
+    .Creative>.creative-h2{
+        font-size: 50px;
+    }
+    .Creative>.creative-p{
+        font-size: 17px;
+        max-width: 400px;
+    }
+    .Creative>.dashboard-card-row{
+        flex-direction: row;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 932px) and (max-width: 1024px){
+    .creative-wrapper>.Creative{
+        max-width: 860px;
+    }
+    .Creative>.creative-h2{
+        font-size: 60px;
+    }
+    .Creative>.creative-p{
+        font-size: 18px;
+    }
+    .Creative>.dashboard-card-row{
+        flex-direction: row;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 1441px) and (max-width: 2560px){
+    .creative-wrapper>.Creative{
+        max-width: 1200px;
+    }
+    .Creative>.creative-h2{
+        font-size: 80px;
+    }
+    .Creative>.creative-p{
+        font-size: 25px;
+    }
+}
