@@ -28,7 +28,8 @@ const Brandbg = () => {
                         desc="Turning your strategy into action—bringing ideas to life and delivering results that move your brand forward."
                     />
                 </section>
-                <Footer data="Maximize Your Revenue Possibilities" />
+                <a className="top-hero-cta">Maximize Your Revenue Possibilities</a>
+
             </section>
         </>
     )

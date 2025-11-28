@@ -17,7 +17,7 @@ const DashboardCard = ({ data }) => {
     return (
         <>
                 <section className="Dashboard">
-                    <header>
+                    {/* <header>
                         <div className={`dropdown ${open ? "show" : ""}`}>
                             <img src={icon1} alt="" className="drop-icon" />
                             <h5>Placed Order</h5>
@@ -36,7 +36,7 @@ const DashboardCard = ({ data }) => {
                         </div>
                         <p>Jul 1, 2024 - Jul 24, 2024 compared to
                             previous period</p>
-                    </header>
+                    </header> */}
 
                     <main>
                         <section className="main-header">

@@ -60,7 +60,8 @@
     flex-shrink: 0;
     background: #6DF89F;
     box-shadow: 3px 3px 0px #000000;
-    border-radius: 6px;
+    border: 2px solid #000;
+    border-radius: 12px;
     text-decoration: none;
     padding: 20px 0;
 }

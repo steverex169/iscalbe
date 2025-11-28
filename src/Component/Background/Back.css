@@ -16,13 +16,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     max-width: 1000px;
-    margin: 20px auto;
-    height: 100%;
+    margin: 0 auto;
+
     position: relative;
-    z-index: -1;
+    padding-top: 120px;  /* header space */
+    z-index: 1;          /* always above background */
 }
+
 
 /* Img for hero bg */
 .hero>.hero-img-1 {

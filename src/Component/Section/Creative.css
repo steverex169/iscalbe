@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background: #000000;
-    margin-top: 200px;
+    margin-top: 82px;
     border: 2px solid transparent;
 }
 .creative-wrapper>.Creative{
@@ -16,7 +16,7 @@
     height: 100%;
     margin: 0 auto;
     gap: 30px;
-    padding-top: 200px;
+    padding-top: 58px;
 }
 .Creative>.creative-h2{
     font-size: 70px;
@@ -175,4 +175,104 @@
     .Creative>.creative-p{
         font-size: 25px;
     }
+}
+/* BRAND SLIDER */
+.brand-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.brand-slider {
+  display: flex;
+  gap: 70px;
+  width: max-content;
+  animation: slideBrands 20s linear infinite;
+}
+
+.brand-slider img {
+  height: 55px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  transition: 0.3s ease;
+}
+
+.brand-slider img:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+@keyframes slideBrands {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* SPARKLES SECTION BELOW SLIDER */
+.mainspark {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px; /* EXACT 2 PX GAP */
+}
+.sparkle-container{
+  position: relative;
+  height: 180px;
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sparkle-container canvas {
+  position: absolute !important;
+  inset: 0;
+}
+
+.sparkle-heading {
+  position: relative;
+  z-index: 10;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+.sparkle-mask {
+  position: absolute;
+  inset: 0;
+  background: black;
+
+  /* ⭐ Perfect bottom curve mask */
+  -webkit-mask-image: radial-gradient(
+    90% 160% at center bottom,
+    transparent 35%,
+    black 80%
+  );
+  mask-image: radial-gradient(
+    90% 160% at center bottom,
+    transparent 35%,
+    black 80%
+  );
+
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  pointer-events: none;
+}
+
+
+
+.sparkle-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
 }

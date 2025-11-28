@@ -130,11 +130,13 @@
     justify-content: center;
 }
 
-.promo-right img {
-    width: 250px;
-    height: auto;
-    object-fit: contain;
+.promo-right .phone-video {
+  width: 250px;
+  height: auto;
+  object-fit: contain; /* maintains aspect ratio */
+  border-radius: 20px;
 }
+
 
 /* Responsive adjustments */
 /* @media (max-width: 768px) {

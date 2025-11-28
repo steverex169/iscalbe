@@ -83,9 +83,17 @@ const Work = () => {
           </div>
 
           <div className="promo-right">
-            {/* Replace with your actual image */}
-            <img src={phone} alt="Phone Mockup" />
+            <video 
+              src="/Iscable.app/videos/PhoneSales.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="phone-video"
+            />
+
           </div>
+
         </section>
       </div>
     </>

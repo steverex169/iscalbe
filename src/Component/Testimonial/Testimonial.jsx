@@ -14,7 +14,6 @@ const Testimonial = () => {
                 <TestCard/>
             </div>
         </div>
-        <Marquee/>
     </>
   )
 }
