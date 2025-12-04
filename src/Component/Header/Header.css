@@ -67,6 +67,10 @@ header {
 .testimonial-card {
 width: 267px !important;
 }
+.sparkle-container {
+    height: 172px !important;
+    width: 66% !important;
+}
 }
 
 
