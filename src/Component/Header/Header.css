@@ -38,31 +38,34 @@ header {
         display: flex !important;
         align-items: center !important;
         justify-content: end !important;
-        gap: 270px !important;
+        gap: 224px !important;
     }
     .creative-wrapper {
         width: 100% !important;
     }
     .case-card {
-        width: 415px !important;
+        width: 370px !important;
     }
     .case-image {
-        width: 375px;
+        width: 334px !important;
     }
     .footer-box>p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
     .testimonial-quote { 
-        font-size: 15px;
+        font-size: 17px !important;
     }
     .lastPart-desc {
-    font-size: 14px;
-    color: #cfcfcf;
-    line-height: 1.6;
+    font-size: 14px !important;
+    color: #cfcfcf !important;
+    line-height: 1.6 !important;
     max-width: 400px !important;
 }
 .marquee-title {
-    font-size: 17px;
+    font-size: 17px !important;
+}
+.testimonial-card {
+width: 267px !important;
 }
 }
 
