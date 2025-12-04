@@ -26,6 +26,47 @@ header {
     padding: 0 320px;
 }
 
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+
+    header {
+        height: 80px  !important;      /* force override */
+        padding: 10px 38px !important;
+        align-items: center !important;
+        justify-content: space-between;
+    }
+    .left-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: end !important;
+        gap: 270px !important;
+    }
+    .creative-wrapper {
+        width: 100% !important;
+    }
+    .case-card {
+        width: 415px !important;
+    }
+    .case-image {
+        width: 375px;
+    }
+    .footer-box>p {
+        font-size: 14px;
+    }
+    .testimonial-quote { 
+        font-size: 15px;
+    }
+    .lastPart-desc {
+    font-size: 14px;
+    color: #cfcfcf;
+    line-height: 1.6;
+    max-width: 400px !important;
+}
+.marquee-title {
+    font-size: 17px;
+}
+}
+
+
 /* LEFT SECTION (Hamburger + Logo) */
 .left-container {
     display: flex;
@@ -36,7 +77,7 @@ header {
 /* HAMBURGER */
 .hamburger {
     display: none;
-    font-size: 28px;
+    font-size: 40px;
     color: #02e054;
     cursor: pointer;
     position: relative;
