@@ -1,33 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .case-card {
-  background: #000; /* black background */
+  background: #000;
   color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 590px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  justify-content: center;
-  align-items: start;
-  padding: 20px;
-  text-align: start;
+  perspective: 1000px;
 }
 
 .case-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Flip inner */
+.case-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.case-card.flipped .case-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.case-card-front, .case-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+.case-card-front {
+  background: #111;
+}
+
+.case-card-back {
+  background: #111;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 30px;
+  text-align: center;
+}
+.case-card-back h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  text-align: start;
+}
+.case-card-back p{
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d8d8d8;
+  margin-bottom: 1.5rem;
+  text-align: start;
 }
 
 .case-image {
-  width: 410px;
+  width: 100%;
   height: 263px;
+  object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
 
@@ -52,6 +100,8 @@
   margin-bottom: 1.5rem;
 }
 
+
+
 .read-more {
   background: #73ff91;
   color: #000;
@@ -59,7 +109,6 @@
   border: none;
   border-radius: 6px;
   padding: 0.75rem 1.5rem;
-  align-self: flex-start;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 6px 6px 0px white;
@@ -68,40 +117,22 @@
 .read-more:hover {
   background: #61db79;
 }
-@media only screen and (max-width: 320px) {
-  .case-card{
-    width: 380px;
-  }
-  .case-image{
-    width: 240px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 328px) {
-  .case-card{
-    width: 380px;
-  }
-  .case-image{
-    width: 260px;
-  }
+
+/* bottom-case grid for CaseStudy */
+.bottom-case {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 50px;
 }
 
-@media only screen and (min-width: 329px) and (max-width: 428px) {
-  .case-image{
-    width: 360px;
+/* Responsive */
+@media (max-width: 768px) {
+  .bottom-case {
+    grid-template-columns: 1fr;
   }
-}
-
-@media only screen and (min-width: 428px) and (max-width: 450px) {
-  .case-image{
-    width: 360px;
-  }
-}
-
-@media only screen and (min-width: 932px) and (max-width: 1024px) {
-  .case-card{
-    width: 400px;
-  }
-  .case-image{
-    width: 360px;
+  .case-card {
+    height: auto;
   }
 }

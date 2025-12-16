@@ -87,7 +87,7 @@
     align-items: center;
     background-color: #000;
     color: #fff;
-    padding: 60px 80px;
+    padding: 4px 80px;
     border-radius: 20px;
     max-width: 1100px;
     margin: 80px auto;
@@ -99,7 +99,7 @@
 }
 
 .promo-left h1 {
-    font-size: 52px;
+    font-size: 34px;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 40px;
@@ -110,7 +110,7 @@
     background-color: #6dfb9f;
     color: #000;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     padding: 15px 28px;
     border: none;
     border-radius: 10px;
@@ -131,7 +131,7 @@
 }
 
 .promo-right .phone-video {
-  width: 250px;
+  width: 415px;
   height: auto;
   object-fit: contain; /* maintains aspect ratio */
   border-radius: 20px;

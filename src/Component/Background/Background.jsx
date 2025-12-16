@@ -27,6 +27,8 @@ const Background = () => {
     const img4 = useRef();
     const img5 = useRef();
     const img6 = useRef();
+    const homeRef = useRef();   // 👈 NEW
+
 
     // Refs for sections
     const creativeRef = useRef();
@@ -49,6 +51,7 @@ const Background = () => {
         <>
             <Header 
                 refs={{ 
+                    home: homeRef,
                     creative: creativeRef, 
                     work: workRef, 
                     case: caseRef, 
@@ -58,7 +61,7 @@ const Background = () => {
                 }} 
             />
 
-            <section className="hero">
+            <section className="hero" ref={homeRef}>
                 <img src={first_img} alt="" className='hero-img-1' ref={img1} />
                 <img src={second_img} alt="" className='hero-img-2' ref={img2} />
                 <img src={third_img} alt="" className='hero-img-3' ref={img3} />
@@ -68,7 +71,6 @@ const Background = () => {
                 <Top />
             </section>
 
-            <Marquee />
             <div ref={creativeRef}><Creative /></div>
             <div ref={workRef}><Work /></div>
             <div ref={caseRef}><CaseStudy /></div>

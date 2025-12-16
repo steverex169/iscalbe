@@ -9,19 +9,18 @@ const Header = ({ refs }) => {
   const logoref = useRef();
 
   useEffect(() => {
-    const tl = gsap.timeline();
-    tl.fromTo(
-      logoref.current,
-      { y: 20, opacity: 0 },
-      { y: 0, duration: 0.8, opacity: 1, ease: "power1.inOut" },
-      0.3
-    );
-    tl.fromTo(
-      [box1ref.current, box2ref.current, box3ref.current],
-      { y: 20, opacity: 0 },
-      { y: 0, duration: 0.8, opacity: 1, ease: "power1.inOut", stagger: 0.3 }
-    );
+    // Animate only the 3 boxes
+    gsap.to([box1ref.current, box2ref.current, box3ref.current], {
+      y: -10,            // move 10px up
+      duration: 1,       // 1 second to move up
+      repeat: -1,        // infinite loop
+      yoyo: true,        // come back down
+      ease: "power1.inOut",
+      stagger: 0.2       // boxes move one after another
+    });
   }, []);
+
+
 
   const [open, setOpen] = useState(false);
 
@@ -46,11 +45,12 @@ const Header = ({ refs }) => {
       </div>
 
       <div className={`navlink ${open ? "open" : ""}`}>
-        <a onClick={() => handleScroll('creative')}>Creative</a>
+        <a onClick={() => handleScroll('home')}>Home</a>
+        <a onClick={() => handleScroll('creative')}>Result</a>
         <a onClick={() => handleScroll('work')}>What we do</a>
-        <a onClick={() => handleScroll('case')}>Case Study</a>
+        {/* <a onClick={() => handleScroll('case')}>Case Study</a>
         <a onClick={() => handleScroll('review')}>Reviews</a>
-        <a onClick={() => handleScroll('testimonial')}>Testimonials</a>
+        <a onClick={() => handleScroll('testimonial')}>Testimonials</a> */}
         <a onClick={() => handleScroll('last')} className="cta">Get Started</a>
       </div>
     </header>

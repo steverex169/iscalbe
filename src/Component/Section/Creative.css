@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background: #000000;
-    margin-top: 82px;
+    margin-top: 120px;
     border: 2px solid transparent;
 }
 .creative-wrapper>.Creative{
@@ -180,7 +180,7 @@
 .brand-slider-wrapper {
   width: 100%;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 6px 20px;
 }
 
 .brand-slider {
@@ -218,14 +218,13 @@
   height: 180px;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 2px; /* EXACT 2 PX GAP */
 }
 .sparkle-container{
   position: relative;
   height: 180px;
-  width: 42%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,7 +257,7 @@
     black 80%
   );
   mask-image: radial-gradient(
-    90% 160% at center bottom,
+    72% 142% at center bottom,
     transparent 35%,
     black 80%
   );

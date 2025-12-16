@@ -28,7 +28,7 @@
 .Video-main-box > .video-h1 {
     font-size: 20px;
     font-weight: 800;
-    color: #fff;
+    color: #000;
     z-index: 1;
     position: absolute;
     top: 70%;
@@ -42,7 +42,7 @@
 .Video-main-box > .video-bar {
   padding: 10px;
   border-radius: 8px;
-  color: #fff;
+  color: #000;
   font-family: sans-serif;
   z-index: 1;
   position: absolute;
@@ -109,7 +109,7 @@
 .Video-main-box > .play {
     width: 81px;
     height: 81px;
-    color: #fff;
+    color: #000;
     position: absolute;
     top: 30%;
     left: 50%;
