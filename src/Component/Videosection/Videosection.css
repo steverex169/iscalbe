@@ -1,0 +1,28 @@
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  width: 60%; /* adjust width as needed */
+  max-width: 1200px;
+  overflow: hidden;
+  border-radius: 20px; /* rounded corners for better look */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.center-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 370px) and (max-width: 768px){
+    .video-container
+ {
+    width: 74%;
+}
+}

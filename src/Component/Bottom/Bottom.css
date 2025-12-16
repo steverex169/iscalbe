@@ -1,0 +1,177 @@
+.bottom-hero {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 200px auto 0 auto;
+}
+
+.bottom-hero>.row-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.bottom-hero>.hero-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 780px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.bottom-hero>.brand-logos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.brand-logos>img {
+  width: 130px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0) saturate(0);
+  opacity: 0.7;
+}
+
+/* 📱 RESPONSIVE BREAKPOINTS */
+
+/* max 320px */
+@media only screen and (max-width: 320px) {
+  .bottom-hero {
+    max-width: 250px;
+  }
+
+  .bottom-hero>.row-card {
+    gap: 20px;
+  }
+
+  .bottom-hero>.hero-grid {
+    flex-direction: column;
+    gap: 20px;
+    height: 150px;
+    width: 100%;
+  }
+}
+
+/* 321–376px */
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+  .bottom-hero {
+    max-width: 350px;
+  }
+
+  .bottom-hero>.row-card {
+    gap: 20px;
+  }
+
+  .bottom-hero>.hero-grid {
+    flex-direction: column;
+    gap: 20px;
+    height: 150px;
+    width: 100%;
+  }
+}
+
+/* 377–426px */
+@media only screen and (min-width: 329px) and (max-width: 450px) {
+  .bottom-hero {
+    max-width: 400px;
+  }
+
+  .bottom-hero>.row-card {
+    gap: 20px;
+  }
+
+  .bottom-hero>.hero-grid {
+    flex-direction: column;
+    gap: 20px;
+    height: 150px;
+    width: 100%;
+  }
+}
+
+/* 427–768px */
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+  .bottom-hero {
+    max-width: 540px;
+  }
+
+  .bottom-hero>.hero-grid {
+    width: 450px;
+  }
+}
+
+/* 769–968px */
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+  .bottom-hero {
+    max-width: 720px;
+  }
+
+  .bottom-hero>.hero-grid {
+    width: 600px;
+  }
+}
+
+/* 969–1024px */
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+  .bottom-hero {
+    max-width: 860px;
+  }
+
+  .bottom-hero>.hero-grid {
+    width: 700px;
+  }
+}
+
+/* 1441–2560px */
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+  .bottom-hero {
+    margin: 200px auto 0 auto;
+    max-width: 1200px;
+  }
+
+  .hero-number {
+    font-size: 60px;
+  }
+
+  .hero-subtext {
+    font-size: 20px;
+  }
+}
+
+/* For Iphone Media queries */
+/* @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 328px) and (max-width: 428px) {
+  .bottom-hero>.row-card {
+    height: 200px;
+  }
+
+  .bottom-hero>.hero-grid {
+    height: 100px;
+    flex-direction: column;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 429px) and (max-width: 450px) {
+  .bottom-hero>.row-card {
+    height: 200px;
+  }
+
+  .bottom-hero>.hero-grid {
+    height: 100px;
+    flex-direction: column;
+  }
+} */
