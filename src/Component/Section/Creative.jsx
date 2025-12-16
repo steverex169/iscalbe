@@ -4,8 +4,6 @@ import "../Section/Creative.css";
 import VideoBox from "../Videocard/Videocard";
 import DashboardCard from "../Dashboard/DashboardCard.jsx";
 import Footer from "../Footer/Footer.jsx";
-import introVideo from "../../../public/videos/video1.mp4";
-import lightsVideo from "../../../public/videos/video2.mp4";
 
 // Sparkles component
 import SparkleMasked from "../../Component/ui/SparklesClean.jsx";
@@ -67,14 +65,15 @@ const Creative = () => {
 
           <div className="row-video-card">
             <VideoBox
-              link={introVideo}
+              link="/videos/video1.mp4"
               title="RGBA-Lights"
             />
             <VideoBox
-              link={lightsVideo}
+              link="/videos/video2.mp4"
               title="RGBA-Lights"
             />
           </div>
+
 
           <div className="dashboard-card-row">
             <DashboardCard />

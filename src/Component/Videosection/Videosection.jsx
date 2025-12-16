@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import "./VideoSection.css";
-import VideoPath from "../../../public/videos/Primevideo.mp4";
+import "./Videosection.css"; // make sure filename matches exactly
 import gsap from "gsap";
-
 
 const VideoSection = () => {
   const videoRef = useRef();
@@ -19,7 +17,7 @@ const VideoSection = () => {
     <section className="video-section">
       <div className="video-container" ref={videoRef}>
         <video
-          src={VideoPath}
+          src="/videos/Primevideo.mp4"   // direct path from public folder
           autoPlay
           muted
           loop
