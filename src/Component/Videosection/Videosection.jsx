@@ -17,7 +17,7 @@ const VideoSection = () => {
     <section className="video-section">
       <div className="video-container" ref={videoRef}>
         <video
-          src="/videos/Primevideo.mp4"   // direct path from public folder
+          src="/Iscable.app/videos/Primevideo.mp4"   // direct path from public folder
           autoPlay
           muted
           loop
