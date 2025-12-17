@@ -8,17 +8,37 @@ const Header = ({ refs }) => {
   const box3ref = useRef();
   const logoref = useRef();
 
-  useEffect(() => {
-    // Animate only the 3 boxes
-    gsap.to([box1ref.current, box2ref.current, box3ref.current], {
-      y: -10,            // move 10px up
-      duration: 1,       // 1 second to move up
-      repeat: -1,        // infinite loop
-      yoyo: true,        // come back down
-      ease: "power1.inOut",
-      stagger: 0.2       // boxes move one after another
-    });
-  }, []);
+ useEffect(() => {
+  const tl = gsap.timeline({
+    repeat: -1,
+    repeatDelay: 1, // ⏱ 2 seconds pause after full signal
+    ease: "power1.inOut"
+  });
+
+  // reset all bars (small)
+  tl.set([box1ref.current, box2ref.current, box3ref.current], {
+    height: 6
+  });
+
+  // 1️⃣ pehla – sab se bara
+  tl.to(box1ref.current, {
+    height: 18,
+    duration: 0.3
+  });
+
+  // 2️⃣ center – medium
+  tl.to(box2ref.current, {
+    height: 14,
+    duration: 0.3
+  });
+
+  // 3️⃣ last – small
+  tl.to(box3ref.current, {
+    height: 8,
+    duration: 0.3
+  });
+
+}, []);
 
 
 
@@ -37,11 +57,17 @@ const Header = ({ refs }) => {
         </div>
 
         <div className="logo">
-          <div className="box1" ref={box1ref}></div>
-          <div className="box2" ref={box2ref}></div>
-          <div className="box3" ref={box3ref}></div>
+          <div className="signal">
+            {/* LEFT → RIGHT */}
+            <div className="box3" ref={box3ref}></div>  {/* SMALL */}
+            <div className="box2" ref={box2ref}></div>  {/* MEDIUM */}
+            <div className="box1" ref={box1ref}></div>  {/* BIG */}
+          </div>
+
           <h1 ref={logoref}>iscalable</h1>
         </div>
+
+
       </div>
 
       <div className={`navlink ${open ? "open" : ""}`}>

@@ -69,7 +69,6 @@ width: 267px !important;
 }
 .sparkle-container {
     height: 172px !important;
-    width: 66% !important;
 }
 }
 
@@ -94,27 +93,36 @@ width: 267px !important;
 .logo {
     display: flex;
     align-items: center;
-    position: relative;
+}
+
+.signal {
+    display: flex;
+    align-items: flex-end;   /* sab niche se aligned */
+    gap: 3px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+.signal .box1,
+.signal .box2,
+.signal .box3 {
+    width: 6px;
+    height: 6px;
+    background: linear-gradient(to top, #47CC8A, #81FC93);
+    border-radius: 2px;
 }
 
 .logo h1 {
     font-size: 26px;
     font-weight: 700;
     color: #000;
-    margin-left: 22px;
 }
 
-/* LOGO BOX DECORATIONS */
-.logo .box1,
-.logo .box2,
-.logo .box3 {
-    position: absolute;
-    background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
-}
 
-.logo .box1 { width: 8px; height: 17px; left: 0px; top: 5px; }
-.logo .box2 { width: 8px; height: 11px; left: -10px; top: 11px; }
-.logo .box3 { width: 8px; height: 6px;  left: -20px; top: 16px; }
+/* initial small heights */
+.signal .box1 { width: 8px; height: 17px; left: 0px; }
+.signal .box2 { width: 8px; height: 11px; left: -10px; }
+.signal .box3 { width: 8px; height: 6px; left: -20px; }
 
 /* ------------------ NAV LINKS ------------------ */
 .navlink {
@@ -142,7 +150,6 @@ width: 267px !important;
     background: #6DFB9F;
     border: 2px solid #000;
     border-radius: 12px;
-    font-weight: 800;
     text-align: center;
     line-height: 55px;
     box-shadow: 6px 6px 0px #000000;

@@ -1,27 +1,20 @@
 .Video-main-box {
-    width: 593px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    background: linear-gradient(#737373, #0F0F0F);
+    width: 593px; /* tumhara original */
+    height: 350px; /* tumhara original */
     border-radius: 25px;
     position: relative;
-    overflow: hidden; /* ensures no overflow */
+    overflow: hidden;
+    background: #000; /* fallback */
 }
 
 .Video-main-box > video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill; /* full box fill, no black bars */
     border-radius: 25px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
 }
 
 /* Title */

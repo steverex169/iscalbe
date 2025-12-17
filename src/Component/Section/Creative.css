@@ -118,6 +118,8 @@
         overflow: hidden;
         width: 100%;
     }
+    .brand-slider img {
+    height: 18px;}
 }
 @media only screen and (min-width: 451px) and (max-width: 768px){
     .creative-wrapper>.Creative{
@@ -190,9 +192,15 @@
   width: max-content;
   animation: slideBrands 20s linear infinite;
 }
+@media only screen and (min-width: 329px) and (max-width: 600px) {
+    .brand-slider img {
+        height: 18px !important;
+    }
+}
+
 
 .brand-slider img {
-  height: 55px;
+  height: 24px;
   object-fit: contain;
   filter: brightness(0) invert(1);
   opacity: 0.85;
@@ -248,7 +256,6 @@
 
 .sparkle-mask {
   position: absolute;
-  inset: 0;
   background: black;
 
   /* ⭐ Perfect bottom curve mask */

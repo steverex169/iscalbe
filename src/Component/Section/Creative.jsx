@@ -26,7 +26,14 @@ const Creative = () => {
       {/* ⭐⭐⭐ YOUR ORIGINAL CREATIVE SECTION SAME AS BEFORE ⭐⭐⭐ */}
       <div className="creative-wrapper">
               {/* ⭐⭐⭐ TOP BRAND LOGO SLIDER ⭐⭐⭐ */}
-      <div className="brand-slider-wrapper">
+
+
+      {/* ⭐⭐⭐ SPARKLES 2px BELOW SLIDER ⭐⭐⭐ */}
+      <div className="mainspark">
+        
+        <div className="sparkle-container">
+          <SparkleMasked />
+                <div className="brand-slider-wrapper">
         <div className="brand-slider">
           <img src={Jnbreakable} />
           <img src={Fragrant} />
@@ -44,11 +51,6 @@ const Creative = () => {
           <img src={Blowbrusher} />
         </div>
       </div>
-
-      {/* ⭐⭐⭐ SPARKLES 2px BELOW SLIDER ⭐⭐⭐ */}
-      <div className="mainspark">
-        <div className="sparkle-container">
-          <SparkleMasked />
         </div>
               <div className="testmask w-full h-[200px] bg-red-500"></div>
 
@@ -65,11 +67,11 @@ const Creative = () => {
 
           <div className="row-video-card">
             <VideoBox
-              link="/Iscable.app/videos/video1.mp4"
+              link="/videos/video1.mp4"
               title="RGBA-Lights"
             />
             <VideoBox
-              link="/Iscable.app/videos/video2.mp4"
+              link="/videos/video2.mp4"
               title="RGBA-Lights"
             />
           </div>
