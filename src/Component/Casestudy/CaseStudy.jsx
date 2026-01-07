@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Casecard from "./CaseCard/Casecard";
 import brush from "./CaseCard/images/brush.png";
 import women from "./CaseCard/images/women.png";
@@ -8,17 +9,19 @@ const CaseStudy = () => {
   const cases = [
     {
       image: brush,
-      title: "Nano Brush",
-      description: "How we scaled an oral-care business from modest beginnings to impressive growth by building targeted email flows, boosting retention, and increasing revenue.",
+      title: "Selene Teeth — Oral Care",
+      description:
+        "Selene Teeth had no clear email strategy and wasn’t scaling through Klaviyo. iScalable rebuilt their lifecycle flows and implemented consistent weekly campaigns.",
       fullInfo:
-        "We built advanced email flows, abandoned cart recovery, segmentation strategies, and increased repeat purchases by 43%."
+        "X% increase in email performance after iScalable rebuilt Selene Teeth’s flows and campaign strategy from the ground up."
     },
     {
       image: women,
-      title: "Waist Trainers",
-      description: "Discover how we helped a waist trainer company grow its reach and revenue by building data-driven email marketing systems that kept customers engaged.",
+      title: "The Soothie — Sleep Health Device",
+      description:
+        "The Soothie had a strong incentive offer but poor execution that limited conversions. iScalable redesigned the pop-up and welcome flow experience.",
       fullInfo:
-        "Using behavioral email campaigns, upsells, and re-engagement flows, revenue doubled in 6 months."
+        "X% increase in sign-ups after iScalable optimised pop-ups and welcome flows, driving higher welcome-flow revenue."
     }
   ];
 
@@ -27,7 +30,17 @@ const CaseStudy = () => {
       <div className="main-case">
         <div className="top-case">
           <h2>Case Studies</h2>
-          <p>Discover the strategies behind growing lists, driving engagement, and building customer loyalty through email marketing.</p>
+          <p>
+            Discover the strategies behind growing lists, driving engagement,
+            and building customer loyalty through email marketing.
+          </p>
+        </div>
+
+        {/* 👇 See More Button (LEFT END) */}
+        <div className="case-header-row">
+          <Link to="/case-studies" className="see-more-btn">
+            See More →
+          </Link>
         </div>
 
         <div className="bottom-case">

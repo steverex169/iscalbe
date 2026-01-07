@@ -6,6 +6,11 @@
     background: #F5F5F5;
     height: auto;
 }
+.wrap-case {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
 
 .main-case {
     display: flex;
@@ -94,5 +99,22 @@
 .number-slider #n-2, #n-3 { color: #a1a1a1; border: 1px solid transparent; }
 .number-slider #n-2:hover, #n-3:hover { border-color: #E2E2E2; background: #E2E2E2; }
 .next { font-size: 15px; color: #a1a1a1; }
+.case-header-row {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.see-more-btn {
+  color: #6c63ff;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  border-color: #6c63ff;
+}
 
 /* Media queries here (merge previous ones) */

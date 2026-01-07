@@ -3,6 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* .main-testimonial {
+  padding: 50px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.row-test-card {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: center;
+} */
+
+.testimonial-card {
+  flex: 0 0 23%; /* roughly 4 cards in a row */
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
 
 .main-testimonial {
     width: 100%;
@@ -120,7 +142,7 @@
     .main-testimonial>.row-test-card {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 15px;
         align-items: center;
         justify-content: center;
     }

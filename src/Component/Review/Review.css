@@ -208,7 +208,6 @@
         transform: translateX(-50%);
         border-radius: 58px;
         height: 489px;
-        padding: 40px;
     }
 
     .main-review>h2 {
@@ -229,9 +228,8 @@
         background: #6DFB9F;
         font-size: 19px;
         text-align: center;
-        padding: 25px 0;
+        padding: 15px 0;
         font-weight: 800;
         box-shadow: 6px 6px black;
-        border-radius: 6px;
     }
 }

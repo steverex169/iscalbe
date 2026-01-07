@@ -45,6 +45,7 @@ header {
     }
     .case-card {
         width: 370px !important;
+        height: 650px !important;
     }
     .case-image {
         width: 334px !important;
@@ -53,7 +54,7 @@ header {
         font-size: 14px !important;
     }
     .testimonial-quote { 
-        font-size: 17px !important;
+        font-size: 10px !important;
     }
     .lastPart-desc {
     font-size: 14px !important;
@@ -100,7 +101,6 @@ width: 267px !important;
     align-items: flex-end;   /* sab niche se aligned */
     gap: 3px;
     margin-right: 5px;
-    margin-bottom: 8px;
 }
 
 .signal .box1,
