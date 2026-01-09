@@ -144,28 +144,7 @@ const dashboardRows = [
       sms: { amount: 0, percent: 0 },
     }
     ,
-    {
-      dateRange: "Feb 1, 2025 - Jul 31, 2025",
-      totalRevenue: 616986.78,
-      revenueChange: 47,
-
-      attributedRevenue: 123462.12,
-      attributedChange: 53,
-
-      perRecipient: 0.03,
-
-      campaigns: { amount: 82085.0, percent: 66.49 },
-      flows: { amount: 41377.12, percent: 33.51 },
-
-      email: { amount: 123462.12, percent: 100 },
-      sms: { amount: 0, percent: 0 },
-    }
-    ,
-  ],
-
-  // ROW 4
-  [
-    {
+        {
       dateRange: "Feb 6, 2025 - Aug 5, 2025",
       totalRevenue: 596816.32,
       revenueChange: 50,
@@ -181,7 +160,11 @@ const dashboardRows = [
       email: { amount: 117236.65, percent: 100 },
       sms: { amount: 0, percent: 0 },
     }
-    ,
+  ],
+
+  // ROW 4
+  [
+
     {
       dateRange: "Jul 1, 2025 - Jul 31, 2025",
       totalRevenue: 55236.58,
@@ -199,11 +182,7 @@ const dashboardRows = [
       sms: { amount: 0, percent: 0 },
     }
     ,
-  ],
-
-  // ROW 5
-  [
-    {
+        {
       dateRange: "Aug 24, 2024 - Sep 23, 2024",
       totalRevenue: 90518.99,
       revenueChange: 54,
@@ -219,7 +198,11 @@ const dashboardRows = [
       email: { amount: 22653.07, percent: 100 },
       sms: { amount: 0, percent: 0 },
     }
-    ,
+  ],
+
+  // ROW 5
+  [
+
     {
       dateRange: "Sep 16, 2024 - Sep 23, 2024",
       totalRevenue: 32959.82,
@@ -237,11 +220,7 @@ const dashboardRows = [
       sms: { amount: 0, percent: 0 },
     }
     ,
-  ],
-
-  // ROW 6
-  [
-    {
+        {
       dateRange: "Feb 1, 2024 - Jul 25, 2024",
       totalRevenue: 771248.07,
       revenueChange: 536,
@@ -257,7 +236,12 @@ const dashboardRows = [
       email: { amount: 138081.54, percent: 100 },
       sms: { amount: 0, percent: 0 },
     }
-    ,
+    
+  ],
+
+  // ROW 6
+  [
+
     {
       dateRange: "Jul 1, 2024 - Jul 25, 2024",
       totalRevenue: 66042.03,
@@ -275,7 +259,155 @@ const dashboardRows = [
       sms: { amount: 0, percent: 0 },
     }
     ,
+    {
+  dateRange: "Jul 1, 2024 - Jul 24, 2024",
+  totalRevenue: 27518.08,        // £27,518.08
+  revenueChange: 30,             // 30% vs previous period
+  attributedRevenue: 7953.45,    // £7,953.45
+  attributedChange: 630,         // 630% vs previous period
+  perRecipient: 0.19,            // £0.19 per recipient
+  campaigns: { amount: 6764.50, percent: 85.05 }, // ▷ Campaigns
+  flows: { amount: 1188.95, percent: 14.95 },    // Flows
+  email: { amount: 7953.45, percent: 100 },       // Email
+  sms: { amount: 0, percent: 0 },                 // SMS
+}
+
   ],
+  [
+  {
+    dateRange: "Jul 1, 2024 - Jul 24, 2024",
+
+    totalRevenue: 27518.08,
+    revenueChange: 30,
+
+    attributedRevenue: 7953.45,
+    attributedChange: 630,
+
+    perRecipient: 0.19,
+
+    campaigns: {
+      amount: 6764.50,
+      percent: 85.05
+    },
+
+    flows: {
+      amount: 1188.95,
+      percent: 14.95
+    },
+
+    email: {
+      amount: 7953.45,
+      percent: 100
+    },
+
+    sms: {
+      amount: 0,
+      percent: 0
+    }
+  },
+
+  {
+    dateRange: "Jul 1, 2024 - Jul 22, 2024",
+
+    totalRevenue: 25379.13,
+    revenueChange: 35,
+
+    attributedRevenue: 7802.00,
+    attributedChange: 616,
+
+    perRecipient: 0.18,
+
+    campaigns: {
+      amount: 6764.50,
+      percent: 86.70
+    },
+
+    flows: {
+      amount: 1037.50,
+      percent: 13.30
+    },
+
+    email: {
+      amount: 7802.00,
+      percent: 100
+    },
+
+    sms: {
+      amount: 0,
+      percent: 0
+    }
+  }
+],
+[
+  {
+    dateRange: "Oct 18, 2023 - Nov 29, 2023",
+
+    totalRevenue: 577979.06,
+    revenueChange: 27,
+
+    attributedRevenue: 268870.33,
+    attributedPercentOfTotal: 35.97,
+    attributedChange: 6,
+
+    // Per-recipient not shown in dashboard
+    perRecipient: null,
+
+    // Campaigns / Flows split not shown
+    campaigns: {
+      amount: 0,
+      percent: 0
+    },
+
+    flows: {
+      amount: 0,
+      percent: 0
+    },
+
+
+    email: {
+      amount: 268870.33,
+      percent: 100
+    },
+
+    sms: {
+      amount: 0,
+      percent: 0
+    }
+  },
+
+  {
+    dateRange: "Oct 18, 2023 - Nov 28, 2023",
+
+    totalRevenue: 7929.07,
+    revenueChange: 25,
+
+    attributedRevenue: 2870.33,
+    attributedPercentOfTotal: 36.2,
+    attributedChange: 3,
+
+    perRecipient: 0.07,
+
+    campaigns: {
+      amount: 1907.40,
+      percent: 66.45
+    },
+
+    flows: {
+      amount: 962.93,
+      percent: 33.55
+    },
+
+    email: {
+      amount: 2870.33,
+      percent: 100
+    },
+
+    sms: {
+      amount: 0,
+      percent: 0
+    }
+  }
+],
 ];
 
 
