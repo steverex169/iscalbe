@@ -22,7 +22,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     padding: 0 320px;
 }
 
@@ -43,13 +42,6 @@ header {
     .creative-wrapper {
         width: 100% !important;
     }
-    .case-card {
-        width: 370px !important;
-        height: 650px !important;
-    }
-    .case-image {
-        width: 334px !important;
-    }
     .footer-box>p {
         font-size: 14px !important;
     }
@@ -66,7 +58,7 @@ header {
     font-size: 17px !important;
 }
 .testimonial-card {
-width: 267px !important;
+width: 204px !important;
 }
 .sparkle-container {
     height: 172px !important;
@@ -100,7 +92,7 @@ width: 267px !important;
     display: flex;
     align-items: flex-end;   /* sab niche se aligned */
     gap: 3px;
-    margin-right: 5px;
+    height: 18px;
 }
 
 .signal .box1,
@@ -128,7 +120,7 @@ width: 267px !important;
 .navlink {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 90px;
 }
 
 .navlink a {
@@ -137,6 +129,8 @@ width: 267px !important;
     color: #0C0C0C;
     transition: 0.2s;
     cursor: pointer;       /* Makes the hand pointer appear */
+    font-family: "PP Telegraf";
+    font-weight: 400;
 
 }
 .navlink a:hover {
@@ -154,6 +148,9 @@ width: 267px !important;
     line-height: 55px;
     box-shadow: 6px 6px 0px #000000;
     transition: 0.2s;
+    font-family: "PP Telegraf";
+    font-size: 19px;
+    font-weight: 800;
 }
 
 .navlink .cta:hover {

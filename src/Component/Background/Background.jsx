@@ -12,6 +12,7 @@ import Top from '../Top/Top.jsx';
 import BottomHero from '../Bottom/Bottom.jsx';
 import Marquee from '../Marquee/Marquee.jsx';
 import Creative from '../Section/Creative';
+import Portfolio from '../Section/Portfolio.jsx'
 import Brandbg from '../Brand-Boost/Background/Brandbg.jsx';
 import Backhelp from '../Helping/HelpBackground/Backhelp.jsx';
 import Work from '../Work/Work.jsx';
@@ -34,6 +35,7 @@ const Background = () => {
 
     // Refs for sections
     const creativeRef = useRef();
+    const portfolioRef = useRef();
     const bigVideoRef = useRef();
     const workRef = useRef();
     const caseRef = useRef();
@@ -56,6 +58,7 @@ const Background = () => {
                 refs={{ 
                     home: homeRef,
                     creative: creativeRef, 
+                    portfolio: portfolioRef,
                     bigVideo: bigVideoRef,
                     work: workRef, 
                     case: caseRef, 
@@ -72,10 +75,13 @@ const Background = () => {
                 <img src={fourth_img} alt="" className='hero-img-4' ref={img4} />
                 <img src={fifth_img} alt="" className='hero-img-5' ref={img5} />
                 <img src={sixth_img} alt="" className='hero-img-6' ref={img6} />
+                <img src={third_img} alt="" className='hero-img-7' ref={img3} />
+                <img src={fourth_img} alt="" className='hero-img-8' ref={img4} />
                 <Top />
             </section>
 
             <div ref={creativeRef}><Creative /></div>
+            <div ref={portfolioRef}><Portfolio /></div>
             <div ref={bigVideoRef}><VideoSection /></div>
             <div ref={workRef}><Work /></div>
             <div ref={caseRef}><CaseStudy /></div>

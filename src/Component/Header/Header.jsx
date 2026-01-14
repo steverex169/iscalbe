@@ -8,37 +8,38 @@ const Header = ({ refs }) => {
   const box3ref = useRef();
   const logoref = useRef();
 
- useEffect(() => {
-  const tl = gsap.timeline({
-    repeat: -1,
-    repeatDelay: 1, // ⏱ 2 seconds pause after full signal
-    ease: "power1.inOut"
-  });
+  useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 1,
+      ease: "power1.inOut"
+    });
 
-  // reset all bars (small)
-  tl.set([box1ref.current, box2ref.current, box3ref.current], {
-    height: 6
-  });
+    // reset all bars (same alignment)
+    tl.set([box1ref.current, box2ref.current, box3ref.current], {
+      height: 2
+    });
 
-  // 1️⃣ pehla – sab se bara
-  tl.to(box1ref.current, {
-    height: 18,
-    duration: 0.3
-  });
+    // 1️⃣ pehle 3rd bar move kare
+    tl.to(box3ref.current, {
+      height: 8,
+      duration: 0.3
+    });
 
-  // 2️⃣ center – medium
-  tl.to(box2ref.current, {
-    height: 14,
-    duration: 0.3
-  });
+    // 2️⃣ phir center (2nd)
+    tl.to(box2ref.current, {
+      height: 14,
+      duration: 0.3
+    });
 
-  // 3️⃣ last – small
-  tl.to(box3ref.current, {
-    height: 8,
-    duration: 0.3
-  });
+    // 3️⃣ last me 1st bar
+    tl.to(box1ref.current, {
+      height: 18,
+      duration: 0.3
+    });
 
-}, []);
+  }, []);
+
 
 
 
@@ -77,7 +78,7 @@ const Header = ({ refs }) => {
         {/* <a onClick={() => handleScroll('case')}>Case Study</a>
         <a onClick={() => handleScroll('review')}>Reviews</a>
         <a onClick={() => handleScroll('testimonial')}>Testimonials</a> */}
-        <a onClick={() => handleScroll('last')} className="cta">Get Started</a>
+        <a onClick={() => handleScroll('last')} className="cta">Let’s Work</a>
       </div>
     </header>
   );

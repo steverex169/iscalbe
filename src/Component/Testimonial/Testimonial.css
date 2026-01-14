@@ -15,9 +15,88 @@
   overflow: hidden;
   justify-content: center;
 } */
+.testimonial-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-test-card {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* NAV BUTTONS */
+.nav-btn {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #000;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.nav-btn svg {
+  color: #fff;
+  font-size: 16px;
+}
+
+.nav-btn:hover {
+  background: #6DFB9F;
+}
+
+.nav-btn:hover svg {
+  color: #000;
+}
+
+/* BUTTON POSITIONS */
+.nav-btn.left {
+  left: -60px;
+}
+
+.nav-btn.right {
+  right: -60px;
+}
+
+/* RESPONSIVE BUTTON FIX */
+@media (max-width: 768px) {
+  .nav-btn.left {
+    left: -40px;
+  }
+
+  .nav-btn.right {
+    right: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav-btn.left {
+    left: 0px;
+  }
+
+  .nav-btn.right {
+    right: 0px;
+  }
+}
+
+
 
 .testimonial-card {
-  flex: 0 0 23%; /* roughly 4 cards in a row */
   background: #fff;
   padding: 20px;
   border-radius: 15px;
@@ -130,7 +209,7 @@
 
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
     .main-testimonial {
-        max-width: 1200px;
+        max-width: 1020px;
     }
 
     .main-testimonial>h1 {

@@ -7,7 +7,7 @@ const Top = () => {
         <>
             <div className="top-hero">
                 <h5 className='top-hero-h5'>We don’t just push send...</h5>
-                <h2 className='top-hero-h2'>Regrow <span>Revenue</span> with Data You Already Own.</h2>
+                <h2 className='top-hero-h2'>We Grow <span>Revenue</span> with Data You Already Own.</h2>
                 <p className='top-hero-p'>Not just another agency, we’re your e-commerce retention partner.</p>
                 <a href="https://calendly.com/moheearum7/30min" className='top-hero-cta'>Schedule Your Free Consultation</a>
                 <span className='top-hero-span'>You're in Good Hands:</span>

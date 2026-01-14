@@ -1,0 +1,197 @@
+.portfolio-section {
+  position: relative;
+  padding: 5px 0;
+  background-image: url("../Bottom/images/bg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0C0C0C;
+  margin-bottom: 50px;
+}
+
+.portfolio-overlay {
+  padding: 80px 0;
+}
+
+.portfolio-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #fff;
+}
+
+.portfolio-header h2 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.portfolio-header p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.portfolio-slider {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  padding: 0 28px;
+}
+
+
+.portfolio-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio-card {
+  min-width: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Card wrapper */
+.email-card {
+  width: 259px;
+  height: 487px;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.35s ease;
+}
+
+.email-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Scroll container */
+.email-scroll {
+  height: 100%;
+  overflow-y: hidden;
+  cursor: grab;
+}
+
+/* On hover — scroll enable */
+.email-card:hover .email-scroll {
+  overflow-y: auto;
+}
+
+/* Email image */
+.email-scroll img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hide scrollbar (Chrome / Safari) */
+.email-scroll::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Firefox */
+.email-scroll {
+  scrollbar-width: none;
+}
+
+/* Optional smooth scroll feel */
+.email-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Slider wrapper for buttons */
+.portfolio-slider-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden; /* hide extra cards outside view */
+  max-width: 1224px; /* 4 cards * 280 + 3 gaps of 8px = adjust if needed */
+  margin: 0 auto;
+  align-items: center;
+}
+
+.portfolio-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+/* Slider buttons */
+.slider-btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  font-size: 32px;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-btns:hover {
+  background: #6DFB9F;
+}
+
+.slider-btns.prev {
+  left: 0;
+}
+
+.slider-btns.next {
+  right: 0;
+}
+
+/* Dots */
+.slider-dots {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.active-dot {
+  background-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .email-card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .email-card {
+    width: 180px;
+  }
+  .portfolio-slider {
+    gap: 10px;
+    }
+
+  .slider-btns {
+    font-size: 24px;
+  }
+}
