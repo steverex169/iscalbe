@@ -302,17 +302,17 @@
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
     .top-hero>.top-hero-h5 {
         font-size: 25px;
-        margin-top: 10px;
+        margin-top: 25px;
     }
 
     .top-hero>.top-hero-h2 {
         font-size: 71px;
         max-width: 1100px;
-        margin-top: 112px;
+        margin-top: 10px;
     }
 
     .top-hero>.top-hero-p {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .top-hero>.top-row-img {

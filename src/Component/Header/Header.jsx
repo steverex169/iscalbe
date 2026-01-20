@@ -22,19 +22,19 @@ const Header = ({ refs }) => {
 
     // 1️⃣ pehle 3rd bar move kare
     tl.to(box3ref.current, {
-      height: 8,
+      height: 5,
       duration: 0.3
     });
 
     // 2️⃣ phir center (2nd)
     tl.to(box2ref.current, {
-      height: 14,
+      height: 9,
       duration: 0.3
     });
 
     // 3️⃣ last me 1st bar
     tl.to(box1ref.current, {
-      height: 18,
+      height: 13,
       duration: 0.3
     });
 

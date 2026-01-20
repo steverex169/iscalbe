@@ -69,29 +69,29 @@ const Creative = () => {
 
             <div className="brand-slider-wrapper">
               <div className="brand-slider">
-                <img src={Jnbreakable} />
-                <img src={Fragrant} />
-                <img src={Conzuri} />
-                <img src={Selene_black} />
-                <img src={Soothe} />
-                <img src={Blowbrusher} />
-                <img src={li} />
-                <img src={l2} />
-                <img src={l4} />
-                <img src={l11} />
-                <img src={l12} />
+                <img src={Jnbreakable} style={{ height: "50px" }} alt=""  />
+                <img src={Fragrant} style={{ height: "50px" }} alt=""  />
+                <img src={Conzuri} style={{ height: "40px" }} alt=""  />
+                <img src={Selene_black} style={{ height: "40px" }} alt=""  />
+                <img src={Soothe} style={{ height: "40px" }} alt=""  />
+                <img src={Blowbrusher} style={{ height: "40px" }} alt=""  />
+                <img src={li} style={{ height: "100px", marginTop: "-21px" }} alt="" />
+                <img src={l2} style={{ height: "50px" }} alt="" />
+                <img src={l4} style={{ height: "50px" }} alt=""  />
+                <img src={l11} style={{ height: "50px" }} alt=""  />
+                <img src={l12} style={{ height: "50px" }} alt=""  />
 
 
-                <img src={Jnbreakable} />
-                <img src={Fragrant} />
-                <img src={Conzuri} />
-                <img src={Selene_black} />
-                <img src={Soothe} />
-                <img src={l13} />
-                <img src={l14} />
-                <img src={l22} />
-                <img src={l33} />
-                <img src={l44} />
+                <img src={Jnbreakable} style={{ height: "50px" }} alt=""  />
+                <img src={Fragrant} style={{ height: "50px" }} alt=""  />
+                <img src={Conzuri} style={{ height: "50px" }} alt=""  />
+                <img src={Selene_black} style={{ height: "50px" }} alt=""  />
+                <img src={Soothe} style={{ height: "50px" }} alt=""  />
+                <img src={l13} style={{ height: "50px" }} alt="" />
+                <img src={l14} style={{ height: "50px" }} alt=""  />
+                <img src={l22} style={{ height: "50px" }} alt=""  />
+                <img src={l33} style={{ height: "50px" }} alt=""  />
+                <img src={l44} style={{ height: "50px" }} alt=""  />
 
               </div>
             </div>

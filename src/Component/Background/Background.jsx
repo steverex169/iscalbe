@@ -75,8 +75,8 @@ const Background = () => {
                 <img src={fourth_img} alt="" className='hero-img-4' ref={img4} />
                 <img src={fifth_img} alt="" className='hero-img-5' ref={img5} />
                 <img src={sixth_img} alt="" className='hero-img-6' ref={img6} />
-                <img src={third_img} alt="" className='hero-img-7' ref={img3} />
-                <img src={fourth_img} alt="" className='hero-img-8' ref={img4} />
+                {/* <img src={third_img} alt="" className='hero-img-7' ref={img3} />
+                <img src={fourth_img} alt="" className='hero-img-8' ref={img4} /> */}
                 <Top />
             </section>
 

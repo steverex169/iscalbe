@@ -6,7 +6,7 @@ const TestCard = ({ name, quote }) => {
   return (
     <div className="testimonial-card">
       <div className="testimonial-header">
-        <div className="circle-logo">{name}</div>
+        {/* <div className="circle-logo">{name}</div> */}
         <div className="testimonial-title">
           <h3>{name}</h3>
           <MdVerified className="verify" />

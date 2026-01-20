@@ -109,7 +109,7 @@
     .main-review>h2{
         font-size: 25px;
     }
-    .main-review>p{
+    .main->reviewp{
         font-size: 15px;
         max-width: 250px;
     }
@@ -223,7 +223,7 @@
     }
 
     .main-review>.review-footer {
-        width: 424px;
+        width: 312px;
         height: 65px;
         background: #6DFB9F;
         font-size: 19px;

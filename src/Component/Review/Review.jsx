@@ -16,7 +16,7 @@ const Review = () => {
                     <h2>Like What you see?</h2>
                     <p>If we don't fulfil our promise, you pay nothing and we will let you keep everything we have installed</p>
                     <div className="review-footer">
-                        Maximize Your Revenue Possibilities →
+                        Book Your call now →
                     </div>
                 </div>
             </div>
