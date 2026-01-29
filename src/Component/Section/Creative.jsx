@@ -41,6 +41,7 @@ import img1112 from "../Bottom/images/2412.png";
 import img1113 from "../Bottom/images/2413.png";
 import img1114 from "../Bottom/images/2414.png";
 import img11113 from "../Bottom/images/24111.png";
+import img11114 from "../Bottom/images/waisti.png";
 
 
 
@@ -85,6 +86,7 @@ const Creative = () => {
                 <img src={Jnbreakable} style={{ height: "50px" }} alt=""  />
                 <img src={Fragrant} style={{ height: "50px" }} alt=""  />
                 <img src={Conzuri} style={{ height: "50px" }} alt=""  />
+                <img src={img11114} style={{ height: "50px" }} alt=""  />
                 <img src={Selene_black} style={{ height: "50px" }} alt=""  />
                 <img src={Soothe} style={{ height: "50px" }} alt=""  />
                 <img src={l13} style={{ height: "50px" }} alt="" />

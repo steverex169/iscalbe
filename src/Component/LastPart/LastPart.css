@@ -28,26 +28,27 @@
 
 .lastPart-bar {
   width: 6px;
-  border-radius: 2px;
 }
 
 .lastPart-bar1 {
-  margin-top: 5px;
-    width: 8px;
-    height: 10px;
+  margin-top: 11px;
+    width: 6px;
+    height: 6px;
     background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
 }
 
 .lastPart-bar2 {
-  margin-top: 2px;
-  width: 8px;
-  height: 14px;
+  margin-top: 7px;
+  width: 6px;
+  height: 10px;
   background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
 }
 
 .lastPart-bar3 {
-  width: 8px;
-  height: 17px;
+    margin-top: 4px;
+
+  width: 6px;
+  height: 13px;
   background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
 }
 

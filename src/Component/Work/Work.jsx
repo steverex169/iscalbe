@@ -11,7 +11,7 @@ const Work = () => {
           <div className="work-box1"></div>
           <div className="work-box2"></div>
           <div className="work-box3"></div>
-          <h1>iscalable</h1>
+          <h1 className="work-head">iscalable</h1>
         </div>
         <h1>What we do.</h1>
         <img src={workdes} alt="" className="work-des" />

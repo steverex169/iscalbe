@@ -48,7 +48,7 @@
     height: 11px;
     z-index: 1;
     position: absolute;
-    left: -10px;
+    left: -9px;
     top: 11px;
     background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
 }
@@ -58,9 +58,14 @@
     height: 6px;
     z-index: 1;
     position: absolute;
-    left: -20px;
+    left: -18px;
     top: 16px;
     background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.main-work>.work-logo>.work-head {
+    top: -7px;
+    position: absolute;
 }
 
 .main-work>h1 {
