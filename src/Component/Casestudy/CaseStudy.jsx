@@ -205,10 +205,11 @@
 
 import React, { useState } from "react";
 import "./Casestudy.css";
-import email1 from "../Bottom/images/email32.png";
+import email1 from "../Bottom/images/email23.jpg";
 import email2 from "../Bottom/images/email44.jpg";
 import email3 from "../Bottom/images/email3.png";
 import email4 from "../Bottom/images/email11.png";
+import emailz from "../Bottom/images/email22.png";
 
 
 const CaseStudySection = () => {
@@ -235,7 +236,7 @@ const CaseStudySection = () => {
         "BlowBrusher needed a major revenue spike during peak summer demand. iScalable rebuilt flows, increased campaign cadence, and aligned messaging to seasonal promotions. X% surge in email-attributed revenue, with email driving over X% of total seasonal revenue after iScalable’s optimisation.",
     },
     {
-      image: null,
+      image: emailz,
       brand: "Unbreakable",
       title: "Unbreakable — Premium Umbrellas",
       description:
@@ -254,69 +255,6 @@ const CaseStudySection = () => {
       title: "Conzuri — Height-Boosting Footwear",
       description:
         "Conzuri had strong open rates but weak downstream conversions. iScalable redesigned every email template using mobile-first best practices. Immediate improvements across all key metrics within days of iScalable launching redesigned email templates.",
-    },
-    {
-      image: null,
-      brand: "GlowBear",
-      title: "GlowBear — Teddy Bear Toy",
-      description:
-        "GlowBear needed emails to convert emotional gifting traffic. iScalable rebuilt flows and campaign messaging around urgency and gifting moments.",
-    },
-    {
-      image: null,
-      brand: "Cleen",
-      title: "Cleen — Portable Nebuliser",
-      description:
-        "Cleen’s email channel wasn’t converting despite high-intent traffic. iScalable rebuilt education-driven flows to improve trust.",
-    },
-    {
-      image: null,
-      brand: "Sanira",
-      title: "Sanira — Women’s Health Shapewear",
-      description:
-        "Sanira needed messaging aligned with confidence and comfort. iScalable rebuilt lifecycle flows to improve conversion and order value.",
-    },
-    {
-      image: null,
-      brand: "Cuddli",
-      title: "Cuddli — Baby Sleep Product",
-      description:
-        "Cuddli needed emails to convert cautious new parents. iScalable rebuilt trust-focused flows to drive consistent sales.",
-    },
-    {
-      image: null,
-      brand: "Purr",
-      title: "Purr — Pet Feeder",
-      description:
-        "Purr’s email channel lacked scalability. iScalable rebuilt flows and campaign timing to improve repeat purchases.",
-    },
-    {
-      image: null,
-      brand: "PawTree",
-      title: "PawTree — Cat Tree",
-      description:
-        "PawTree’s emails lacked urgency. iScalable rebuilt campaigns to drive faster buying decisions and higher order value.",
-    },
-    {
-      image: null,
-      brand: "Nova Bar",
-      title: "Nova Bar — Mechanics Torch",
-      description:
-        "Nova Bar needed to convert professional buyers faster. iScalable rebuilt flows with utility-driven messaging.",
-    },
-    {
-      image: null,
-      brand: "Talki",
-      title: "Talki — Nut Milk Blender",
-      description:
-        "Talki lacked education and retention strategy. iScalable rebuilt lifecycle flows to increase conversions and repeat purchases.",
-    },
-    {
-      image: null,
-      brand: "Lemora",
-      title: "Lemora — Portable Battle Ropes",
-      description:
-        "Lemora needed to convert high-intent fitness shoppers. iScalable rebuilt lifecycle strategy with urgency triggers.",
     },
   ];
 

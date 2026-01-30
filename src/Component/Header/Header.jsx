@@ -73,7 +73,7 @@ const Header = ({ refs }) => {
 
       <div className={`navlink ${open ? "open" : ""}`}>
         <a onClick={() => handleScroll('home')}>Home</a>
-        <a onClick={() => handleScroll('creative')}>Result</a>
+        <a onClick={() => handleScroll('creative')}>Results</a>
         <a onClick={() => handleScroll('work')}>What we do</a>
         {/* <a onClick={() => handleScroll('case')}>Case Study</a>
         <a onClick={() => handleScroll('review')}>Reviews</a>

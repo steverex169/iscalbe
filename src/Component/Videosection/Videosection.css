@@ -2,13 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .video-container {
-  width: 60%; /* adjust width as needed */
+  position: relative; /* important for absolute buttons */
+  width: 60%;
   max-width: 1200px;
   overflow: hidden;
-  border-radius: 20px; /* rounded corners for better look */
+  border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 
@@ -20,9 +22,40 @@
   border-radius: 20px;
 }
 
-@media only screen and (min-width: 370px) and (max-width: 768px){
-    .video-container
- {
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+  .video-container {
     width: 74%;
+  }
 }
+
+.speed-options {
+  position: absolute;
+  top: 200px; /* top-right */
+  right: 300px;
+  display: flex;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 6px;
+  z-index: 10;
+  transition: opacity 0.2s ease;
+}
+
+.speed-btn {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.speed-btn:hover {
+  background: #fff;
+}
+
+.speed-btn.active {
+  background: #6dfb9f;
+  color: #fff;
 }

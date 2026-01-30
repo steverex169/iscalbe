@@ -16,11 +16,6 @@ const testimonialsData = [
       "What stood out most about iScalable was how organised and proactive they were. Nothing slipped, nothing was rushed, and every decision was explained properly. If email is important to your growth, don’t wait — talk to iScalable."
   },
   {
-    name: "CONZURI",
-    quote:
-      "iScalable genuinely care about doing things the right way. From strategy to execution, everything felt structured and well thought out. If you’re scaling a Shopify brand and want peace of mind, iScalable are the team."
-  },
-  {
     name: "Lemora",
     quote:
       "The level of professionalism from iScalable was refreshing. They understood our brand quickly and communicated clearly throughout the entire process. If you’re on the fence, just book the call — it’s worth it."

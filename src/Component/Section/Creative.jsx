@@ -27,7 +27,7 @@ import l33 from "../Bottom/images/l33.png";
 import l44 from "../Bottom/images/l44.png";
 import img1 from "../Bottom/images/231.png";
 import img2 from "../Bottom/images/241.png";
-import img3 from "../Bottom/images/251.png";
+import img3 from "../Bottom/images/R1img.png";
 import img4 from "../Bottom/images/252.png";
 import img11 from "../Bottom/images/253.png";
 import img12 from "../Bottom/images/254.png";
