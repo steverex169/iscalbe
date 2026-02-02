@@ -50,7 +50,7 @@ const VideoSection = () => {
       >
         <video
           ref={videoRef} // ✅ ref only on video
-          src="/Iscable.app/videos/Primevideo.mp4" // MUST be in public/videos/
+          src="/videos/Primevideo.mp4" // MUST be in public/videos/
           autoPlay
           muted
           loop

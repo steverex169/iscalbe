@@ -114,7 +114,7 @@ const Creative = () => {
             <VideoBox link="/Iscable.app/videos/video2.mp4" title="RGBA-Lights" />
           </div> */}
           <div className="row-video-card">
-            <VideoBox link="/Iscable.app/videos/video1.mp4" title="RGBA-Lights" />
+            <VideoBox link="/videos/video1.mp4" title="RGBA-Lights" />
           </div>
 
           {/* ✅ AUTO DASHBOARD CARDS */}
