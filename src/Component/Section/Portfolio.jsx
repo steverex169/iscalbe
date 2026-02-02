@@ -4,6 +4,8 @@ import "../Section/Portfolio.css";
 import img1 from "../Bottom/images/Email1.gif";
 import img2 from "../Bottom/images/email2.jpg";
 import img3 from "../Bottom/images/email3.png";
+import imgwes from "../Bottom/images/emailwest.png";
+import imgdark from "../Bottom/images/emaildark.png";
 import img4 from "../Bottom/images/email4.jpg";
 import img5 from "../Bottom/images/email11.png";
 import img6 from "../Bottom/images/email12.png";
@@ -28,7 +30,7 @@ import img24 from "../Bottom/images/email222.png";
 
 
 // Add more images as needed
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
+const images = [img1, img2, img3, imgdark, imgwes, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
 
 const Portfolio = () => {
     const getCardsPerView = () => {

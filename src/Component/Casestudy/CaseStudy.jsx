@@ -210,6 +210,7 @@ import email2 from "../Bottom/images/email44.jpg";
 import email3 from "../Bottom/images/email3.png";
 import email4 from "../Bottom/images/email11.png";
 import emailz from "../Bottom/images/email22.png";
+import emailwest from "../Bottom/images/emailwest.png";
 
 
 const CaseStudySection = () => {
@@ -243,7 +244,7 @@ const CaseStudySection = () => {
         "Despite sending emails consistently, Unbreakable’s campaigns were underperforming. iScalable rebuilt the campaign calendar and creative to position the brand as a market authority. 2× revenue per recipient, plus X% higher opens and X% higher clicks after iScalable rebuilt campaign strategy and creative.",
     },
     {
-      image: null,
+      image: emailwest,
       brand: "Fragrant Breeze",
       title: "Fragrant Breeze — Fragrance & Personal Care",
       description:

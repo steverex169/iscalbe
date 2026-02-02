@@ -84,7 +84,7 @@ const Work = () => {
 
           <div className="promo-right">
             <video 
-              src="/videos/PhoneSales1.mp4" 
+              src="/Iscable.app/videos/PhoneSales1.mp4" 
               autoPlay 
               loop 
               muted 

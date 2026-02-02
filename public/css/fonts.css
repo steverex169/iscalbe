@@ -1,0 +1,14 @@
+/* fonts.css ya main CSS file me add karo */
+@font-face {
+  font-family: "PP Telegraf";
+  src: url("../Fonts/PPTelegraf-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Telegraf";
+  src: url("../Fonts/PPTelegraf-Ultrabold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}

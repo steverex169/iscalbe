@@ -1,6 +1,6 @@
 .Video-main-box {
-    width: 593px; /* tumhara original */
-    height: 350px; /* tumhara original */
+    width: 1200px; /* tumhara original */
+    height: 400px; /* tumhara original */
     border-radius: 25px;
     position: relative;
     overflow: hidden;
@@ -40,7 +40,7 @@
   z-index: 1;
   position: absolute;
   top: 80%;
-  width: 420px;
+  width: 1100px;
   height: 14px;
   left: 40px;
   opacity: 0;

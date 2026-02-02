@@ -27,18 +27,18 @@ import l33 from "../Bottom/images/l33.png";
 import l44 from "../Bottom/images/l44.png";
 import img1 from "../Bottom/images/231.png";
 import img2 from "../Bottom/images/241.png";
-import img3 from "../Bottom/images/R1img.png";
-import img4 from "../Bottom/images/252.png";
-import img11 from "../Bottom/images/253.png";
-import img12 from "../Bottom/images/254.png";
-import img13 from "../Bottom/images/255.png";
-import img14 from "../Bottom/images/257.png";
-import img111 from "../Bottom/images/258.png";
-import img112 from "../Bottom/images/259.png";
-import img113 from "../Bottom/images/2312.png";
-import img114 from "../Bottom/images/2411.png";
-import img1112 from "../Bottom/images/2412.png";
-import img1113 from "../Bottom/images/2413.png";
+import img3 from "../Bottom/images/R4.png";
+import img4 from "../Bottom/images/R11.png";
+import img11 from "../Bottom/images/R2.png";
+import img12 from "../Bottom/images/R6.png";
+import img13 from "../Bottom/images/R5.png";
+import img14 from "../Bottom/images/R7.png";
+import img111 from "../Bottom/images/R3.png";
+import img112 from "../Bottom/images/R1.png";
+import img113 from "../Bottom/images/R9.png";
+import img114 from "../Bottom/images/R12.png";
+import img1112 from "../Bottom/images/R8.png";
+import img1113 from "../Bottom/images/R10.png";
 import img1114 from "../Bottom/images/2414.png";
 import img11113 from "../Bottom/images/24111.png";
 import img11114 from "../Bottom/images/waisti.png";
@@ -51,10 +51,10 @@ const dashboardImages = [
   [img11, img12],
   [img13, img14],
   [img111, img112],
-  [img2, img11113],
-  [img114, img1112],
-  [img1113, img1114],
-  [img1, img113],
+  [img113, img114],
+  [img1112, img1113],
+  // [img1113, img1114],
+  // [img1, img113],
 ];
 
 
@@ -109,9 +109,12 @@ const Creative = () => {
             from email.
           </p>
 
+          {/* <div className="row-video-card">
+            <VideoBox link="/Iscable.app/videos/video1.mp4" title="RGBA-Lights" />
+            <VideoBox link="/Iscable.app/videos/video2.mp4" title="RGBA-Lights" />
+          </div> */}
           <div className="row-video-card">
-            <VideoBox link="/videos/video1.mp4" title="RGBA-Lights" />
-            <VideoBox link="/videos/video2.mp4" title="RGBA-Lights" />
+            <VideoBox link="/Iscable.app/videos/video1.mp4" title="RGBA-Lights" />
           </div>
 
           {/* ✅ AUTO DASHBOARD CARDS */}
