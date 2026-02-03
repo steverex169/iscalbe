@@ -76,8 +76,8 @@ const Header = ({ refs }) => {
         <a onClick={() => handleScroll('creative')}>Results</a>
         <a onClick={() => handleScroll('work')}>What we do</a>
         <a onClick={() => handleScroll('case')}>Case Study</a>
-        {/* <a onClick={() => handleScroll('review')}>Reviews</a>
-        <a onClick={() => handleScroll('testimonial')}>Testimonials</a> */}
+        <a onClick={() => handleScroll('portfolio')}>Designs</a>
+        {/* <a onClick={() => handleScroll('testimonial')}>Testimonials</a> */}
         <a onClick={() => handleScroll('last')} className="cta">Let’s Work</a>
       </div>
     </header>

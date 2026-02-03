@@ -30,7 +30,7 @@ import img24 from "../Bottom/images/email222.png";
 
 
 // Add more images as needed
-const images = [img1, img2, img3, imgdark, imgwes, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
+const images = [imgdark, img1, img2, imgwes, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
 
 const Portfolio = () => {
     const getCardsPerView = () => {

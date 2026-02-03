@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PP Telegraf", sans-serif;
+}
 .portfolio-section {
   position: relative;
   padding: 5px 0;

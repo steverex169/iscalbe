@@ -238,7 +238,7 @@ const CaseStudySection = () => {
     },
     {
       image: emailz,
-      brand: "Unbreakable",
+      brand: "Zenchi",
       title: "Unbreakable — Premium Umbrellas",
       description:
         "Despite sending emails consistently, Unbreakable’s campaigns were underperforming. iScalable rebuilt the campaign calendar and creative to position the brand as a market authority. 2× revenue per recipient, plus X% higher opens and X% higher clicks after iScalable rebuilt campaign strategy and creative.",

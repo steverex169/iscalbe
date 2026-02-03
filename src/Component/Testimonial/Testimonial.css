@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "PP Telegraf", sans-serif;
+
 }
 /* .main-testimonial {
   padding: 50px 20px;
@@ -122,6 +124,7 @@
     font-size: 55px;
     max-width: 650px;
     text-align: center;
+    font-weight: 800;
 }
 
 .main-testimonial>.row-test-card {

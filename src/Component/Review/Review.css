@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "PP Telegraf", sans-serif;
+
 }
 
 .wrapper-review {
@@ -44,6 +46,7 @@
 
 .main-review>h2 {
     font-size: 50px;
+    font-weight: 800;
 }
 
 .main-review>p {

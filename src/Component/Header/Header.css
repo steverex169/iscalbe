@@ -125,7 +125,7 @@ width: 204px !important;
 .navlink {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 18px;
 }
 
 .navlink a {

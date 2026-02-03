@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "PP Telegraf", sans-serif;
+
 }
 
 .main-work {
@@ -104,7 +106,7 @@
 }
 
 .promo-left h1 {
-    font-size: 34px;
+    font-size: 42px;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 40px;
@@ -114,9 +116,9 @@
 .promo-btn {
     background-color: #6dfb9f;
     color: #000;
-    font-weight: 600;
-    font-size: 12px;
-    padding: 15px 28px;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 15px 11px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
