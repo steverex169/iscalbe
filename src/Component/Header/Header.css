@@ -87,14 +87,13 @@ width: 204px !important;
 /* LOGO */
 .logo {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .signal {
     display: flex;
     align-items: flex-end;   /* sab niche se aligned */
     gap: 1px;
-    height: 21px;
 }
 
 .signal .box1,

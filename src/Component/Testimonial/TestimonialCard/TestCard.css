@@ -1,4 +1,4 @@
-.testimonial-card {
+/* .testimonial-card {
   width: 250px;
   height: 333px;
   background: #fff;
@@ -13,7 +13,7 @@
   gap: 20px;
   font-family: "PP Telegraf", sans-serif;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+} */
 
 .testimonial-card:hover {
   transform: translateY(-5px);
@@ -61,8 +61,7 @@
     color: black;
     position: absolute;
     left: 0px;
-    top: 20px;
-    font-size: 12px;
+    font-size: 13px;
 }
 .testimonial-quote {
   font-size: 15px;

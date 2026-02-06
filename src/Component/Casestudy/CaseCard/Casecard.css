@@ -79,13 +79,6 @@
   border-radius: 12px 12px 0 0;
 }
 
-.case-content {
-  padding: 0 5.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-
 .case-title {
   font-size: 1.5rem;
   font-weight: 700;
