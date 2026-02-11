@@ -8,9 +8,9 @@ const Work = () => {
     <>
       <div className="main-work">
         <div className="lastwork-logo-box">
-          <div className="lastwork-bar lastPart-bar1"></div>
-          <div className="lastwork-bar lastPart-bar2"></div>
-          <div className="lastwork-bar lastPart-bar3"></div>
+          <div className="lastwork-bar lastwork-bar1"></div>
+          <div className="lastwork-bar lastwork-bar2"></div>
+          <div className="lastwork-bar lastwork-bar3"></div>
           <h2 className="lastwork-brand-text">iscalable</h2>
         </div>
         <h1>What we do.</h1>
