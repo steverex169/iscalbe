@@ -31,28 +31,37 @@ import img3 from "../Bottom/images/R4.png";
 import img4 from "../Bottom/images/R11.png";
 import img11 from "../Bottom/images/R2.png";
 import img12 from "../Bottom/images/R6.png";
-import img13 from "../Bottom/images/R5.png";
-import img14 from "../Bottom/images/R7.png";
-import img111 from "../Bottom/images/R3.png";
-import img112 from "../Bottom/images/R1.png";
-import img113 from "../Bottom/images/R9.png";
-import img114 from "../Bottom/images/R12.png";
-import img1112 from "../Bottom/images/R8.png";
-import img1113 from "../Bottom/images/R10.png";
-import img1114 from "../Bottom/images/2414.png";
-import img11113 from "../Bottom/images/24111.png";
-import img11114 from "../Bottom/images/waisti.png";
+import img13 from "../Bottom/images/fimg1111.png";
+import img14 from "../Bottom/images/fimg444.png";
+import img111 from "../Bottom/images/fimg333.png";
+import img112 from "../Bottom/images/fimg222.png";
+import img113 from "../Bottom/images/fimg111.png";
+import img114 from "../Bottom/images/fimg33.png";
+import img1112 from "../Bottom/images/fimg44.png";
+import img1113 from "../Bottom/images/fimg22.png";
+import img1114 from "../Bottom/images/fimg11.png";
+import img11113 from "../Bottom/images/fimg4.png";
+import img11114 from "../Bottom/images/fimg3.png";
+import fimg1 from "../Bottom/images/fimg1.png";
+import fimg2 from "../Bottom/images/fimg2.png";
 
 
 
 // ✅ COMPLETE DASHBOARD DATA (HAR CARD DIFFERENT)
 const dashboardImages = [
-  [img3, img4],
-  [img11, img12],
-  [img13, img14],
-  [img111, img112],
-  [img113, img114],
-  [img1112, img1113],
+  [img114],
+  [img11114],
+  [img14],
+  [img111],
+  [fimg2],
+  [img11113],
+  [img113],
+  [img1113],
+  [img112],
+  [img1112],
+  [img1114],
+  [fimg1],
+  
   // [img1113, img1114],
   // [img1, img113],
 ];
@@ -103,7 +112,7 @@ const Creative = () => {
         </div>
 
         <section className="Creative">
-          <h2 className="creative-h2">Number never lie...</h2>
+          <h2 className="creative-h2">Numbers never lie...</h2>
           <p className="creative-p">
             Our clients generate an average between 20-40% of their revenue
             from email.
@@ -122,10 +131,8 @@ const Creative = () => {
           {dashboardImages.map((row, rowIndex) => (
             <div className="dashboard-card-row" key={rowIndex}>
               <DashboardCard image={row[0]} />
-              <DashboardCard image={row[1]} />
             </div>
           ))}
-
 
         </section>
 

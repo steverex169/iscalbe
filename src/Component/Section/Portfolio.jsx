@@ -6,6 +6,7 @@ import img2 from "../Bottom/images/email2.jpg";
 import img3 from "../Bottom/images/email3.png";
 import imgwes from "../Bottom/images/emailwest.png";
 import imgdark from "../Bottom/images/emaildark.png";
+import imgred from "../Bottom/images/emailred.png";
 import img4 from "../Bottom/images/email4.jpg";
 import img5 from "../Bottom/images/email11.png";
 import img6 from "../Bottom/images/email12.png";
@@ -30,7 +31,7 @@ import img24 from "../Bottom/images/email222.png";
 
 
 // Add more images as needed
-const images = [imgdark, img3, img2, imgwes, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
+const images = [imgred, img3, img2, imgwes, imgdark, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
 
 const Portfolio = () => {
     const getCardsPerView = () => {
@@ -80,7 +81,7 @@ const Portfolio = () => {
                     </div>
                     <h2>Brand’s we’ve helped increase their revenue.</h2>
                     <p>
-                        We Boost sales and maximise customer value with our revenue-driving Email & SMS systems.
+                        We boost sales and maximise customer value with our revenue-driving Email & SMS systems.
                     </p>
                 </div>
 

@@ -47,15 +47,14 @@
     align-items: center;
     gap: 10px;
 }
-.Creative>.dashboard-card-row{
+.Creative > .dashboard-card-row {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    height: 350px;
-    justify-content: space-around;
+    height: auto;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
 }
+
 @media only screen and (max-width: 320px){
     .creative-wrapper>.Creative{
         max-width: 250px;
