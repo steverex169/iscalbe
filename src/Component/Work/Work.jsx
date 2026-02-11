@@ -7,11 +7,11 @@ const Work = () => {
   return (
     <>
       <div className="main-work">
-        <div className="work-logo">
-          <div className="work-box1"></div>
-          <div className="work-box2"></div>
-          <div className="work-box3"></div>
-          <h1 className="work-head">iscalable</h1>
+        <div className="lastwork-logo-box">
+          <div className="lastwork-bar lastPart-bar1"></div>
+          <div className="lastwork-bar lastPart-bar2"></div>
+          <div className="lastwork-bar lastPart-bar3"></div>
+          <h2 className="lastwork-brand-text">iscalable</h2>
         </div>
         <h1>What we do.</h1>
         <img src={workdes} alt="" className="work-des" />

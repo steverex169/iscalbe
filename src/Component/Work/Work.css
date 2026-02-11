@@ -87,6 +87,49 @@
     margin-top: 50px;
     gap: 50px;
 }
+.lastwork-logo-box {
+  display: flex;
+    align-items: center;
+    gap: 1px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.lastwork-bar {
+  width: 6px;
+}
+
+.lastwork-bar1 {
+  margin-top: 11px;
+    width: 8px;
+    height: 6px;
+    background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.lastwork-bar2 {
+  margin-top: 7px;
+  width: 8px;
+  height: 10px;
+  background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.lastwork-bar3 {
+    margin-top: 4px;
+
+  width: 8px;
+  height: 13px;
+  background: linear-gradient(to right, #47CC8A 50%, #81FC93 50%);
+}
+
+.lastwork-brand-text {
+  font-size: 28px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 0.5px;
+  margin-top: -5px;
+
+}
 
 .promo-section {
     display: flex;
