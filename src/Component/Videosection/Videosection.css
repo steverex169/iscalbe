@@ -1,17 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PP Telegraf", sans-serif;
+}
 .video-section {
   display: flex;
+  flex-direction: column; /* stack header + video */
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
 
+.video-header {
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 60px;
+  color: #000;
+}
+
+.video-header h1 {
+  margin-bottom: 12px;
+      font-family: 'PP Telegraf', sans-serif;
+    font-weight: 800;
+    font-size: 37px;
+}
+
+.video-header p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
 .video-container {
-  position: relative; /* important for absolute buttons */
+  position: relative; /* for absolute buttons */
   width: 60%;
   max-width: 1200px;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-video {
@@ -22,33 +52,64 @@
   border-radius: 20px;
 }
 
-@media only screen and (min-width: 370px) and (max-width: 768px) {
+/* Responsive */
+@media (max-width: 1024px) {
   .video-container {
-    width: 74%;
+    max-width: 900px;
   }
 }
 
+/* MOBILE */
+@media (max-width: 768px) {
+  .portfolio-header {
+    margin-bottom: 32px;
+  }
+
+  .speed-options {
+    gap: 8px;
+    padding: 6px 12px;
+  }
+
+  .speed-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .video-section {
+    padding: 40px 12px;
+  }
+
+  .speed-options {
+    flex-direction: row;
+  }
+}
+
+
+/* SPEED OPTIONS CENTERED OVER VIDEO */
 .speed-options {
   position: absolute;
-  top: 200px; /* top-right */
-  right: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center */
   display: flex;
-  gap: 5px;
+  gap: 10px;
   background: rgba(0, 0, 0, 0.6);
-  padding: 5px 10px;
-  border-radius: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
   z-index: 10;
-  transition: opacity 0.2s ease;
 }
 
 .speed-btn {
   background: rgba(255, 255, 255, 0.8);
   border: none;
-  padding: 5px 8px;
+  padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .speed-btn:hover {
