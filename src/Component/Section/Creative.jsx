@@ -49,6 +49,7 @@ import fimg2 from "../Bottom/images/fimg2.png";
 
 // ✅ COMPLETE DASHBOARD DATA (HAR CARD DIFFERENT)
 const dashboardImages = [
+  [fimg1],
   [img114],
   [img11114],
   [img14],
@@ -60,7 +61,6 @@ const dashboardImages = [
   [img112],
   [img1112],
   [img1114],
-  [fimg1],
   
   // [img1113, img1114],
   // [img1, img113],
@@ -95,7 +95,6 @@ const Creative = () => {
                 <img src={Jnbreakable} style={{ height: "50px" }} alt=""  />
                 <img src={Fragrant} style={{ height: "50px" }} alt=""  />
                 <img src={Conzuri} style={{ height: "50px" }} alt=""  />
-                <img src={img11114} style={{ height: "50px" }} alt=""  />
                 <img src={Selene_black} style={{ height: "50px" }} alt=""  />
                 <img src={Soothe} style={{ height: "50px" }} alt=""  />
                 <img src={l13} style={{ height: "50px" }} alt="" />
