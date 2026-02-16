@@ -245,7 +245,7 @@ const CaseStudySection = () => {
     },
     {
       image: emailwest,
-      brand: "Fragrant Breeze",
+      brand: "Waistora",
       title: "Fragrant Breeze — Fragrance & Personal Care",
       description:
         "Fragrant Breeze was over-reliant on campaigns, with flows underperforming. iScalable rebuilt their automation ecosystem to rebalance revenue. £X in incremental revenue after iScalable increased flows’ contribution from X% to X% of email revenue.",
