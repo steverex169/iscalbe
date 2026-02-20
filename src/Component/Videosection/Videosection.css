@@ -18,13 +18,30 @@
   margin-bottom: 60px;
   color: #000;
 }
+.video-title {
+  display: flex;
+  align-items: center;
+  gap: 0;
+    margin-bottom: 12px;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    text-align: center;
+    justify-content: center;
+}
 
-.video-header h1 {
+.prime-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* .video-header h1 {
   margin-bottom: 12px;
       font-family: 'PP Telegraf', sans-serif;
     font-weight: 800;
     font-size: 37px;
-}
+} */
 
 .video-header p {
   opacity: 0.8;
