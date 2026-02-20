@@ -135,7 +135,6 @@ const Creative = () => {
 
         </section>
 
-        <Footer data="Like what you see dont you 😊" />
       </div>
     </>
   );
