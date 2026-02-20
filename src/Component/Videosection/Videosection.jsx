@@ -45,7 +45,14 @@ const VideoSection = () => {
     <section className="video-section">
                       <div className="video-header">
                     
-                    <h1>PRIME’s Email, Built Step by Step (the prime is the logo of prime)</h1>
+                    <h1 className="video-title">
+  PRIME’s Email, Built Step by Step.
+  <img
+    src={primelogo}
+    alt="PRIME Logo"
+    className="prime-logo"
+  />
+</h1>
                     <p>
                         We recreated PRIME’s email and walk you through the design process, step by step, exactly how our team would build it for a client.
                     </p>
