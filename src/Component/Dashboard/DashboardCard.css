@@ -5,6 +5,7 @@
     font-family: "PP Telegraf", sans-serif;
 }
 
+
 /* .Dashboard {
     width: 593px;
     height: 334px;
@@ -15,10 +16,9 @@
 } */
 .Dashboard {
   width: 960px;
-  height: 334px;
   border-radius: 15px;
-  overflow: hidden;
-  background: #111;
+  position: relative;   /* ✅ ADD THIS */
+  overflow: hidden;     /* already tha */
 }
 
 .dashboard-full-img {
@@ -343,7 +343,7 @@ h4 {
   color: #9c9c9c;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 450px) {
     header {
         gap: 5px;
         height: 50px;
@@ -389,7 +389,6 @@ h4 {
 
     .Dashboard {
         width: 300px;
-        height: 400px;
     }
 
     .main-header {
@@ -437,7 +436,7 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 328px) {
+@media only screen and (min-width: 321px) and (max-width: 450px) {
     header {
         gap: 5px;
         height: 50px;
@@ -483,7 +482,6 @@ h4 {
 
     .Dashboard {
         width: 300px;
-        height: 400px;
     }
 
     .main-header {
@@ -577,7 +575,6 @@ h4 {
 
     .Dashboard {
         width: 350px;
-        height: 400px;
     }
 
     .main-header {
@@ -998,4 +995,10 @@ h4 {
         top: 75%;
         left: 20px;
     }
+}
+@media (max-width: 450px){
+  .Dashboard{
+    width: 100%;
+    max-width: 100%;
+  }
 }
