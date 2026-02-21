@@ -41,9 +41,6 @@ header {
         justify-content: end !important;
         gap: 172px !important;
     }
-    .creative-wrapper {
-        width: 100% !important;
-    }
     .footer-box>p {
         font-size: 14px !important;
     }
@@ -61,9 +58,6 @@ header {
 }
 .testimonial-card {
 width: 204px !important;
-}
-.sparkle-container {
-    height: 172px !important;
 }
 }
 
@@ -153,6 +147,7 @@ width: 204px !important;
   background: #6DFB9F;
   border: 2px solid #000;
   border-radius: 12px;
+  box-shadow: 6px 6px 0 #000;
   transition: 0.2s;
 }
 
