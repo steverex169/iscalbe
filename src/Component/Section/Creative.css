@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "PP Telegraf", sans-serif;
 }
+
 .creative-wrapper{
     width: 100%;
     height: 100%;
@@ -11,7 +12,7 @@
     margin-top: 120px;
     border: 2px solid transparent;
 }
-.creative-wrapper>.Creative{
+.Creative{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +24,7 @@
     margin: 0 auto;
     gap: 30px;
     padding-top: 9px;
+    margin-bottom: 40px;
 }
 .Creative>.creative-h2{
     font-size: 80px;
@@ -55,9 +57,10 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 320px){
-    .creative-wrapper>.Creative{
-        max-width: 250px;
+@media only screen and (max-width: 450px){
+    .Creative{
+        max-width: 100%;
+        padding: 0 12px;
     }
     .Creative>.creative-h2{
         font-size: 25px;
@@ -76,7 +79,7 @@
     }
 }
 @media only screen and (min-width: 321px) and (max-width: 328px){
-    .creative-wrapper>.Creative{
+    .Creative{
         max-width: 300px;
     }
     .Creative>.creative-h2{
@@ -96,8 +99,8 @@
     }
 }
 @media only screen and (min-width: 329px) and (max-width: 450px){
-    .creative-wrapper>.Creative{
-        max-width: 350px;
+    .Creative{
+        max-width: 100%;
     }
     .Creative>.creative-h2{
         font-size: 30px;
@@ -127,7 +130,7 @@
     height: 18px;}
 }
 @media only screen and (min-width: 451px) and (max-width: 768px){
-    .creative-wrapper>.Creative{
+    .Creative{
         max-width: 540px;
     }
     .Creative>.creative-h2{
@@ -143,7 +146,7 @@
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 931px){
-    .creative-wrapper>.Creative{
+    .Creative{
         max-width: 720px;
     }
     .Creative>.creative-h2{
@@ -159,7 +162,7 @@
     }
 }
 @media only screen and (min-width: 932px) and (max-width: 1024px){
-    .creative-wrapper>.Creative{
+    .Creative{
         max-width: 860px;
     }
     .Creative>.creative-h2{
@@ -174,8 +177,9 @@
     }
 }
 @media only screen and (min-width: 1441px) and (max-width: 2560px){
-    .creative-wrapper>.Creative{
+    .Creative{
         max-width: 1200px;
+        display: flex;
     }
     .Creative>.creative-h2{
         font-size: 70px;
@@ -188,7 +192,7 @@
 .brand-slider-wrapper {
   width: 100%;
   overflow: hidden;
-  padding: 6px 20px;
+  padding: 37px 0 0;
 }
 
 .brand-slider {
@@ -196,6 +200,7 @@
   gap: 70px;
   width: max-content;
   animation: slideBrands 20s linear infinite;
+  align-items: center;
 }
 @media only screen and (min-width: 329px) and (max-width: 600px) {
     .brand-slider img {
@@ -229,18 +234,21 @@
 /* SPARKLES SECTION BELOW SLIDER */
 .mainspark {
   position: relative;
-  height: 180px;
+  /* height: 180px; */
   width: 100%;
   display: flex;
   align-items: center;
   margin-top: 2px; /* EXACT 2 PX GAP */
 }
+.sparkle-gap {
+  height: 50px; /* jitni space chahiye utni */
+}
 .sparkle-container{
   position: relative;
-  height: 180px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;   /* ✅ VERY IMPORTANT */
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -287,4 +295,63 @@
   width: 100%;
   height: 150px;
   overflow: hidden;
+}
+
+
+
+/* ============================= */
+/* ✅ RESPONSIVE FIXES (SAFE)   */
+/* Desktop layout unchanged     */
+/* ============================= */
+
+/* Prevent right-side sticking on mobile */
+.sparkle-container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Dashboard images never overflow */
+.dashboard-card-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile / Tablet fixes */
+@media (max-width: 768px) {
+
+  /* Creative section full width */
+  .Creative {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Video card height auto */
+  .Creative > .row-video-card {
+    height: auto;
+    flex-direction: column;
+  }
+
+  /* Brand slider spacing smaller */
+  .brand-slider {
+    gap: 40px;
+  }
+
+  .brand-slider-wrapper {
+    padding-top: 20px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 460px) {
+
+  .Creative > .creative-h2 {
+    font-size: 26px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .Creative > .creative-p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
