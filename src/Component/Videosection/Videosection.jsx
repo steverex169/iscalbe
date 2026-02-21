@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Videosection.css";
 import gsap from "gsap";
+import primelogo from "../Bottom/images/primelogo.png";
+
 
 const VideoSection = () => {
   const videoRef = useRef(); // ONLY on <video>
