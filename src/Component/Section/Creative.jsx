@@ -73,18 +73,20 @@ const Creative = () => {
   return (
     <>
       <div className="creative-wrapper">
+
+
         <div className="mainspark">
           <div className="sparkle-container">
             <SparkleMasked />
 
-            <div className="brand-slider-wrapper">
+                    <div className="brand-slider-wrapper">
               <div className="brand-slider">
                 <img src={Jnbreakable} style={{ height: "50px" }} alt=""  />
-                <img src={Fragrant} style={{ height: "50px" }} alt=""  />
-                <img src={Conzuri} style={{ height: "40px" }} alt=""  />
-                <img src={Selene_black} style={{ height: "40px" }} alt=""  />
-                <img src={Soothe} style={{ height: "40px" }} alt=""  />
-                <img src={Blowbrusher} style={{ height: "40px" }} alt=""  />
+                <img src={Fragrant} style={{ height: "40px" }} alt=""  />
+                <img src={Conzuri} style={{ height: "33px" }} alt=""  />
+                <img src={Selene_black} style={{ height: "33px" }} alt=""  />
+                <img src={Soothe} style={{ height: "33px" }} alt=""  />
+                <img src={Blowbrusher} style={{ height: "36px" }} alt=""  />
                 <img src={li} style={{ height: "100px", marginTop: "-21px" }} alt="" />
                 <img src={l2} style={{ height: "50px" }} alt="" />
                 <img src={l4} style={{ height: "50px" }} alt=""  />
@@ -93,10 +95,10 @@ const Creative = () => {
 
 
                 <img src={Jnbreakable} style={{ height: "50px" }} alt=""  />
-                <img src={Fragrant} style={{ height: "50px" }} alt=""  />
-                <img src={Conzuri} style={{ height: "50px" }} alt=""  />
-                <img src={Selene_black} style={{ height: "50px" }} alt=""  />
-                <img src={Soothe} style={{ height: "50px" }} alt=""  />
+                <img src={Fragrant} style={{ height: "40px" }} alt=""  />
+                <img src={Conzuri} style={{ height: "33px" }} alt=""  />
+                <img src={Selene_black} style={{ height: "33px" }} alt=""  />
+                <img src={Soothe} style={{ height: "33px" }} alt=""  />
                 <img src={l13} style={{ height: "50px" }} alt="" />
                 <img src={l14} style={{ height: "50px" }} alt=""  />
                 <img src={l22} style={{ height: "50px" }} alt=""  />
@@ -105,12 +107,10 @@ const Creative = () => {
 
               </div>
             </div>
-          </div>
+                    <div className="sparkle-gap"></div>
 
-          <div className="testmask w-full h-[200px] bg-red-500"></div>
-        </div>
 
-        <section className="Creative">
+                    <section className="Creative">
           <h2 className="creative-h2">Numbers never lie...</h2>
           <p className="creative-p">
             Our clients generate an average between 20-40% of their revenue
@@ -134,7 +134,10 @@ const Creative = () => {
           ))}
 
         </section>
+          </div>
 
+          <div className="testmask w-full h-[200px] bg-red-500"></div>
+        </div>
       </div>
     </>
   );
