@@ -94,9 +94,9 @@ const Creative = () => {
 
                 <img src={Jnbreakable} style={{ height: "40px" }} alt=""  />
                 <img src={Fragrant} style={{ height: "40px" }} alt=""  />
-                <img src={Conzuri} style={{ height: "40px" }} alt=""  />
-                <img src={Selene_black} style={{ height: "40px" }} alt=""  />
-                <img src={Soothe} style={{ height: "40px" }} alt=""  />
+                <img src={Conzuri} style={{ height: "32px" }} alt=""  />
+                <img src={Selene_black} style={{ height: "32px" }} alt=""  />
+                <img src={Soothe} style={{ height: "32px" }} alt=""  />
                 <img src={l13} style={{ height: "40px" }} alt="" />
                 <img src={l14} style={{ height: "40px" }} alt=""  />
                 <img src={l22} style={{ height: "40px" }} alt=""  />
