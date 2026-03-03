@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../Section/Portfolio.css";
+import "../../assets/Css/main.css";
+
 
 import img1 from "../Bottom/images/Email1.gif";
 import img2 from "../Bottom/images/email2.jpg";
