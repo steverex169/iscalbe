@@ -220,3 +220,113 @@
 .promoCard:hover {
   transform: translateY(-8px);
 }
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+  /* General Layout */
+  .lastPart {
+    flex-direction: column;
+    padding: 60px 30px;
+    gap: 60px;
+  }
+
+  .lastPart-left {
+    max-width: 100%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .lastPart-right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Text Adjustments */
+  .mainText {
+    font-size: 20px;
+    max-width: 100%;
+    line-height: 1.4;
+  }
+
+  .ctaBtn {
+    padding: 16px 40px;
+    font-size: 18px;
+  }
+
+  /* Promo Cards */
+  .promoCards {
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+  }
+
+  .promoCard .img1,
+  .promoCard .img2,
+  .promoCard .img3 {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .lastPart {
+    padding: 40px 20px;
+  }
+
+  .mainText {
+    font-size: 18px;
+  }
+
+  .ctaBtn {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+
+  .promoCards {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .promoCard .img1,
+  .promoCard .img2,
+  .promoCard .img3 {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .lastPart-left {
+    gap: 15px;
+        text-align: center;
+        align-items: center;
+  }
+
+  .mainText {
+    font-size: 16px;
+  }
+
+  .ctaBtn {
+    width: 80%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .promoCards {
+        align-items: center;
+        /* gap: 15px; */
+        height: auto;
+        display: flex;
+  }
+
+  /* .promoCard {
+    width: 80%;
+  } */
+
+  .promoCard .img1,
+  .promoCard .img2,
+  .promoCard .img3 {
+    /* width: 100%; */
+    height: auto;
+  }
+}
