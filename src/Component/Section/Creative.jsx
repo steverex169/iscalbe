@@ -103,10 +103,7 @@ function SparklesCore({
   }, [particleCount, minSize, maxSize, particleColor]);
 
   return (
-    <div
-      style={{ width: "100%", height: "100%", background }}
-      className={className}
-    >
+    <div className={className}>
       <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} />
     </div>
   );
@@ -120,7 +117,7 @@ const Creative = () => {
       <div className="mainspark">
         <div className="sparkle-container">
           {/* Sparkles inside Creative.jsx, no imports */}
-          <SparklesCore className="w-full h-full" />
+          <SparklesCore />
 
           <div className="brand-slider-wrapper">
             <div className="brand-slider">
