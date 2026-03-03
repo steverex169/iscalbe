@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PPTelegraf", sans-serif;
+
+}
 .lastPart {
   width: 100%;
   min-height: 100vh;
@@ -152,6 +159,7 @@
     color: #d6d6d6;
     max-width: 480px;
     font-weight: 400;
+    font-family: 'PPTelegraf', sans-serif;
 }
 
 /* NEW BUTTON STYLE */
@@ -164,6 +172,7 @@
     font-size: 19px;
     color: #000;
     cursor: pointer;
+    font-family: 'PPTelegraf', sans-serif;
     /* transition: all 0.3s ease; */
     /* box-shadow: 0 8px 25px rgba(0, 255, 150, 0.25); */
 }
