@@ -10,7 +10,7 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #0b0c1a 0%, #0e1024 100%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 68px 177px;
   box-sizing: border-box;
