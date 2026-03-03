@@ -44,24 +44,29 @@
 }
 .testimonial-title{
   position: relative;
+  margin-bottom: 4px;
 }
 .testimonial-title h3 {
   font-size: 15px;
   font-weight: 800;
   margin: 0;
   color: #111;
+  font-family: 'PPTelegraf', sans-serif;
+  margin-bottom: 4px;
 }
 
 .testimonial-title p {
   font-size: 12px;
   color: #888;
   margin-left: 15px;
+  font-family: 'PPTelegraf', sans-serif;
 }
 .testimonial-title>.verify{
     color: black;
     position: absolute;
     left: 0px;
     font-size: 13px;
+    font-family: 'PPTelegraf', sans-serif;
 }
 .testimonial-quote {
   font-size: 15px;
@@ -70,11 +75,13 @@
   font-weight: 400;
   text-align: left;
   margin: 0;
+  font-family: 'PPTelegraf', sans-serif;
 }
 
 .highlight {
   color: #00c46a;
   font-weight: 600;
+  font-family: 'PPTelegraf', sans-serif;
 }
 @media only screen and (max-width: 320px) {}
 
