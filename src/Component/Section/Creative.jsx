@@ -4,6 +4,8 @@ import "../Section/Creative.css";
 import VideoBox from "../Videocard/Videocard";
 import DashboardCard from "../Dashboard/DashboardCard.jsx";
 import Footer from "../Footer/Footer.jsx";
+import "../../assets/Css/main.css";
+
 
 // Sparkles component
 import SparkleMasked from "../../Component/ui/SparklesClean.jsx";
