@@ -3,6 +3,8 @@ import "../Work/Work.css"
 import workdes from "../Work/images/work-img.png"
 import WorkCard from "../Work/WorkCard/WorkCard.jsx"
 import phone from "../Work/images/phone.png"
+import "../../assets/Css/main.css";
+
 const Work = () => {
   return (
     <>
