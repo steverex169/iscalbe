@@ -9,6 +9,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "PPTelegraf", sans-serif;
+
 }
 
 /* ------------------ HEADER ------------------ */
@@ -100,7 +102,7 @@ width: 204px !important;
 }
 
 .logo h1 {
-  font-family: 'PP Telegraf', sans-serif; /* your existing font */
+  font-family: 'PPTelegraf', sans-serif; /* your existing font */
   font-weight: 800;
   font-size: 26px;
   margin: 0;
@@ -122,7 +124,7 @@ width: 204px !important;
 }
 
 .navlink a {
-  font-family: 'PP Telegraf', sans-serif;
+  font-family: 'PPTelegraf', sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #0C0C0C;
@@ -137,7 +139,7 @@ width: 204px !important;
 
 /* CTA BUTTON */
 .navlink .cta {
-  font-family: 'PP Telegraf', sans-serif;
+  font-family: 'PPTelegraf', sans-serif;
     font-weight: 800;
     font-size: 15px;
     width: 115px;
@@ -149,7 +151,6 @@ width: 204px !important;
     border-radius: 40px;
     transition: 0.2s;
 }
-
 
 .navlink .cta:hover {
   background: #6DFB9F;
