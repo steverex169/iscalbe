@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../Testimonial/Testimonial.css";
 import TestCard from "../../Component/Testimonial/TestimonialCard/TestCard.jsx";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import "../../assets/Css/main.css";
+
 
 
 const testimonialsData = [
