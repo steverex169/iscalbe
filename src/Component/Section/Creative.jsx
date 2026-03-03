@@ -8,7 +8,8 @@ import "../../assets/Css/main.css";
 
 
 // Sparkles component
-import SparkleMasked from "../../Component/ui/SparklesClean.jsx";
+import SparkleClean from "../../Component/ui/SparklesClean.jsx";
+
 
 // Brand logos
 import Jnbreakable from "../Bottom/images/Js.png";
@@ -77,7 +78,7 @@ const Creative = () => {
       <div className="creative-wrapper">
         <div className="mainspark">
           <div className="sparkle-container">
-            <SparkleMasked />
+            <SparkleClean />
 
             <div className="brand-slider-wrapper">
               <div className="brand-slider">
