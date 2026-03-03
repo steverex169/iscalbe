@@ -1,6 +1,8 @@
 import React from 'react'
 import "../Review/Review.css"
 import star from "../Review/images/Star.png"
+import "../../assets/Css/main.css";
+
 const Review = () => {
     return (
         <>
