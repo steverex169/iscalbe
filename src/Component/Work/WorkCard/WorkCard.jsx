@@ -1,6 +1,6 @@
 import React from 'react'
 import "../WorkCard/WorkCard.css"
-import "../../assets/Css/main.css";
+import "../../../assets/Css/main.css";
 
 const WorkCard = ({
     title,
