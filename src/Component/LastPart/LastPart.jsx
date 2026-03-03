@@ -4,6 +4,8 @@ import { Widget } from "@typeform/embed-react";
 import foo1 from "../Bottom/images/foo1.png";
 import foo2 from "../Bottom/images/foo2.png";
 import foo3 from "../Bottom/images/foo3.png";
+import "../../assets/Css/main.css";
+
 
 
 import "./LastPart.css";
