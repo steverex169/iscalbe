@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "PP Telegraf", sans-serif;
+    font-family: "PPTelegraf", sans-serif;
 
 }
 
@@ -159,6 +159,7 @@
     line-height: 1.2;
     margin-bottom: 40px;
     color: #000;
+    font-family: 'PPTelegraf', sans-serif;
 }
 
 .promo-btn {
@@ -171,6 +172,7 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     border-radius: 40px;
+    font-family: 'PPTelegraf', sans-serif;
 }
 
 .promo-btn:hover {
