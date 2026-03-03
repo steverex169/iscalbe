@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import { FaRegPlayCircle } from "react-icons/fa";
 import { CiPause1 } from "react-icons/ci";
 import "../Videocard/Videocard.css";
+import "../../assets/Css/main.css";
+
 
 const VideoBox = ({ link, title }) => {
   const videoRef = useRef(null);
