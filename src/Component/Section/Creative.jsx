@@ -8,8 +8,7 @@ import "../../assets/Css/main.css";
 
 
 // Sparkles component
-import SparkleClean from "../../Component/ui/SparklesClean.jsx";
-
+import { SparkleClean } from "../../Component/ui";
 
 // Brand logos
 import Jnbreakable from "../Bottom/images/Js.png";
