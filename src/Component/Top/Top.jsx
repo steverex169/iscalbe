@@ -2,6 +2,8 @@ import React from 'react'
 import "../Top/Top.css"
 import Logo1 from "../Top/images/logo1.svg"
 import Logo2 from "../Top/images/logo2.png"
+import "../../assets/Css/main.css";
+
 const Top = () => {
     return (
         <>
