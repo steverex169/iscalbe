@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "PP Telegraf",sans-serif;
+    font-family: "PPTelegraf",sans-serif;
 }
 
 footer{
@@ -25,6 +25,8 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 20px;
+        font-family: "PPTelegraf",sans-serif;
+
 }
 .footer-box>p{
     font-weight: 800;
@@ -32,6 +34,8 @@ footer{
     width: 100%;
     height: 100%;
     text-align: center;
+        font-family: "PPTelegraf",sans-serif;
+
 }
 
 @media only screen and (max-width: 320px){
