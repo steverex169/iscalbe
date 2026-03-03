@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Header/Header.css";
 import gsap from "gsap";
+import "../../assets/Css/main.css";
+
 
 const Header = ({ refs }) => {
   const box1ref = useRef(null);
