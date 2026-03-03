@@ -1,6 +1,7 @@
 import React from "react";
 import "../TestimonialCard/TestCard.css";
 import { MdVerified } from "react-icons/md";
+import "../../assets/Css/main.css";
 
 const TestCard = ({ name, quote }) => {
   return (
