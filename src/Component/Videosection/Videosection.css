@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "PP Telegraf", sans-serif;
+    font-family: "PPTelegraf", sans-serif;
 }
 .video-section {
   display: flex;
@@ -23,7 +23,7 @@
   align-items: center;
   gap: 0;
     margin-bottom: 12px;
-    font-family: 'PP Telegraf', sans-serif;
+    font-family: 'PPTelegraf', sans-serif;
     font-weight: 800;
     font-size: 34px;
     text-align: center;
@@ -35,12 +35,11 @@
   width: auto;
   object-fit: contain;
   margin-top: 10px;
-
 }
 
 /* .video-header h1 {
   margin-bottom: 12px;
-      font-family: 'PP Telegraf', sans-serif;
+      font-family: 'PPTelegraf', sans-serif;
     font-weight: 800;
     font-size: 37px;
 } */
@@ -48,6 +47,8 @@
 .video-header p {
   opacity: 0.8;
   line-height: 1.6;
+  font-family: 'PPTelegraf', sans-serif;
+
 }
 
 .video-container {
