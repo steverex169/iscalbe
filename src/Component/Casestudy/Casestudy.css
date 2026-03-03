@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "PP Telegraf", sans-serif;
+    font-family: "PPTelegraf", sans-serif;
 }
 .case-wrapper {
   padding: 80px 20px;
@@ -575,7 +575,7 @@
   border-radius: 20px;
   color: #FFFFFF;
 
-  font-family: "PP Telegraf", sans-serif;
+  font-family: "PPTelegraf", sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
@@ -585,7 +585,7 @@
 /* P TEXT */
 .problem-description {
   width: 100%;
-  font-family: "PP Telegraf", sans-serif;
+  font-family: "PPTelegraf", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 139%;
