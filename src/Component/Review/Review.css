@@ -1,293 +1,239 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PPTelegraf", sans-serif;
+
 }
-.creative-wrapper{
+
+.wrapper-review {
     width: 100%;
-    height: 100%;
-    background: #000000;
-    margin-top: 120px;
-    border: 2px solid transparent;
+    height: 350px;
+    position: relative;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    background: #F5F5F5;
 }
-.creative-wrapper>.Creative{
+
+.main-review {
+    border: 1px solid #E2E2E2;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 449px;
+    position: absolute;
+    background: white;
+    border-radius: 58px;
+    box-shadow: 0 0 20px #41414140;
+    gap: 35px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 860px;
+}
+
+.main-review>.star-row {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1000px;
-    height: 100%;
-    margin: 0 auto;
-    gap: 30px;
-    padding-top: 9px;
-    margin-bottom: 40px;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 50px;
 }
-.Creative>.creative-h2{
-    font-size: 60px;
-    color: #fff;
+
+.main-review>h2 {
+    font-size: 50px;
     font-weight: 800;
     font-family: 'PPTelegraf', sans-serif;
 }
-.Creative>.creative-p{
-    font-size: 25px;
+
+.main-review>p {
+    font-size: 20px;
     font-weight: 400;
-    color: #fff;
-    max-width: 524px;
+    max-width: 735px;
     text-align: center;
-    line-height: 139%;
-    margin-bottom: 20px;
+    line-height: 130%;
     font-family: 'PPTelegraf', sans-serif;
 }
-.Creative>.row-video-card{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 364px;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-}
-.Creative > .dashboard-card-row {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
 
-@media only screen and (max-width: 320px){
-    .creative-wrapper>.Creative{
-        max-width: 250px;
+.main-review>.review-footer {
+    width: 424px;
+    height: 65px;
+    background: #6DFB9F;
+    font-size: 19px;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 800;
+    border: 1px solid #000;
+    font-family: 'PPTelegraf', sans-serif;
+    border-radius: 40px;}
+
+@media only screen and (max-width: 320px) {
+    .main-review{
+        width: 300px;
+        height: 380px;
+        border-radius: 50px;
     }
-    .Creative>.creative-h2{
+    .main-review>.star-row{
+        width: 300px;
+    }
+    .star-row>.star{
+        width: 35px;
+    }
+    .main-review>h2{
         font-size: 25px;
     }
-    .Creative>.creative-p{
-        font-size: 12px;
-        max-width: 400px;
+    .main-review>p{
+        font-size: 15px;
+        max-width: 250px;
     }
-    .Creative>.row-video-card{
-        flex-direction: column;
-        height: auto;
-    }
-    .Creative>.dashboard-card-row{
-        flex-direction: column;
-        height: auto;
-    }
-}
-@media only screen and (min-width: 321px) and (max-width: 328px){
-    .creative-wrapper>.Creative{
-        max-width: 300px;
-    }
-    .Creative>.creative-h2{
-        font-size: 30px;
-    }
-    .Creative>.creative-p{
+    .main-review>.review-footer{
+        width: 250px;
         font-size: 13px;
-        max-width: 400px;
-    }
-    .Creative>.row-video-card{
-        flex-direction: column;
-        height: auto;
-    }
-    .Creative>.dashboard-card-row{
-        flex-direction: column;
-        height: auto;
+        height: 45px;
+        padding: 17px 0;
+        font-weight: 400;
     }
 }
-@media only screen and (min-width: 329px) and (max-width: 450px){
-    .creative-wrapper>.Creative{
-        max-width: 350px;
+
+@media only screen and (min-width: 321px) and (max-width: 328px) {
+    .main-review{
+        width: 300px;
+        height: 380px;
+        border-radius: 50px;
     }
-    .Creative>.creative-h2{
-        font-size: 30px;
+    .main-review>.star-row{
+        width: 300px;
     }
-    .Creative>.creative-p{
+    .star-row>.star{
+        width: 35px;
+    }
+    .main-review>h2{
+        font-size: 25px;
+    }
+    .main->reviewp{
+        font-size: 15px;
+        max-width: 250px;
+    }
+    .main-review>.review-footer{
+        width: 250px;
+        font-size: 13px;
+        height: 45px;
+        padding: 17px 0;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 450px) {
+    .main-review{
+        width: 300px;
+        height: 380px;
+    }
+    .main-review>.star-row{
+        width: 300px;
+    }
+    .star-row>.star{
+        width: 30px;
+    }
+    .main-review>h2{
+        font-size: 25px;
+    }
+    .main-review>p{
+        font-size: 13px;
+        max-width: 250px;
+    }
+    .main-review>.review-footer{
+        width: 250px;
+        font-size: 12px;
+        height: 45px;
+        padding: 17px 0;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    .main-review{
+        width: 500px;
+        height: 410px;
+    }
+    .main-review>.star-row{
+        width: 450px;
+    }
+    .star-row>.star{
+        width: 54px;
+    }
+    .main-review>h2{
+        font-size: 40px;
+    }
+    .main-review>p{
         font-size: 15px;
         max-width: 400px;
     }
-    .Creative>.row-video-card{
-        flex-direction: column;
-        height: auto;
-    }
-    .slide-container{
-        width: 100%;
-        border: 1px solid red;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-    .Creative>.dashboard-card-row{
-        flex-direction: column;
-        height: auto;
-        overflow: hidden;
-        width: 100%;
-    }
-    .brand-slider img {
-    height: 18px;}
 }
-@media only screen and (min-width: 451px) and (max-width: 768px){
-    .creative-wrapper>.Creative{
-        max-width: 540px;
+
+@media only screen and (min-width: 769px) and (max-width: 931px) {
+    .main-review{
+        width: 600px;
     }
-    .Creative>.creative-h2{
-        font-size: 40px;
+    .main-review>.star-row{
+        width: 450px;
     }
-    .Creative>.creative-p{
-        font-size: 17px;
-        max-width: 350px;
+    .main-review>h2{
+        font-size: 45px;
     }
-    .Creative>.dashboard-card-row{
-        flex-direction: row;
-        height: auto;
-    }
-}
-@media only screen and (min-width: 769px) and (max-width: 931px){
-    .creative-wrapper>.Creative{
-        max-width: 720px;
-    }
-    .Creative>.creative-h2{
-        font-size: 50px;
-    }
-    .Creative>.creative-p{
-        font-size: 17px;
-        max-width: 400px;
-    }
-    .Creative>.dashboard-card-row{
-        flex-direction: row;
-        height: auto;
-    }
-}
-@media only screen and (min-width: 932px) and (max-width: 1024px){
-    .creative-wrapper>.Creative{
-        max-width: 860px;
-    }
-    .Creative>.creative-h2{
-        font-size: 40px;
-    }
-    .Creative>.creative-p{
+    .main-review>p{
         font-size: 18px;
-    }
-    .Creative>.dashboard-card-row{
-        flex-direction: row;
-        height: auto;
+        max-width: 500px;
     }
 }
-@media only screen and (min-width: 1441px) and (max-width: 2560px){
-    .creative-wrapper>.Creative{
-        max-width: 1200px;
+
+@media only screen and (min-width: 932px) and (max-width: 1024px) {
+    .main-review{
+        width: 760px;
     }
-    .Creative>.creative-h2{
-        font-size: 60px;
+    .main-review>.star-row{
+        width: 450px;
     }
-    .Creative>.creative-p{
+    .main-review>h2{
+        font-size: 45px;
+    }
+    .main-review>p{
+        font-size: 18px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .main-review {
+        width: 1106px;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 58px;
+        height: 489px;
+    }
+
+    .main-review>h2 {
+        font-size: 55px;
+    }
+
+    .main-review>p {
         font-size: 25px;
+        font-weight: 400;
+        max-width: 735px;
+        text-align: center;
+        line-height: 130%;
     }
-}
-/* BRAND SLIDER */
-.brand-slider-wrapper {
-  width: 100%;
-  overflow: hidden;
-  padding: 6px 20px;
-}
 
-.brand-slider {
-  display: flex;
-  gap: 70px;
-  width: max-content;
-  animation: slideBrands 20s linear infinite;
-}
-@media only screen and (min-width: 329px) and (max-width: 600px) {
-    .brand-slider img {
-        height: 18px !important;
+    .main-review>.review-footer {
+        width: 290px;
+        height: 60px;
+        background: #6DFB9F;
+        font-size: 19px;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: 800;
     }
-}
-
-
-.brand-slider img {
-  height: 24px;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
-  transition: 0.3s ease;
-}
-
-.brand-slider img:hover {
-  opacity: 1;
-  transform: scale(1.08);
-}
-
-@keyframes slideBrands {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* SPARKLES SECTION BELOW SLIDER */
-.mainspark {
-  position: relative;
-  height: 180px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-top: 2px; /* EXACT 2 PX GAP */
-}
-.sparkle-container{
-  position: relative;
-  height: 180px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sparkle-container canvas {
-  position: absolute !important;
-  inset: 0;
-}
-
-.sparkle-heading {
-  position: relative;
-  z-index: 10;
-  font-size: 3rem;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 700;
-}
-
-
-.sparkle-mask {
-  position: absolute;
-  background: black;
-
-  /* ⭐ Perfect bottom curve mask */
-  -webkit-mask-image: radial-gradient(
-    90% 160% at center bottom,
-    transparent 35%,
-    black 80%
-  );
-  mask-image: radial-gradient(
-    72% 142% at center bottom,
-    transparent 35%,
-    black 80%
-  );
-
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  pointer-events: none;
-}
-
-
-
-.sparkle-wrapper {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
 }
