@@ -18,6 +18,8 @@ import dark3 from"../Bottom/images/dark3.png";
 import wa1 from"../Bottom/images/wais1.png";
 import wa2 from"../Bottom/images/wais2.png";
 import wa3 from"../Bottom/images/wais3.png";
+import "../../assets/Css/main.css";
+
 
 
 import React, { useState } from "react";
