@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Casecard.css";
+import "../../assets/Css/main.css";
+
 
 const Casecard = ({ image, title, description, fullInfo }) => {
   const [flipped, setFlipped] = useState(false);
