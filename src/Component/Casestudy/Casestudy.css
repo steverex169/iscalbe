@@ -668,19 +668,172 @@
   color: #FFFFFF;
 }
 
-/* RESPONSIVE */
+/* =======================
+   RESPONSIVE STYLES
+   ======================= */
+
+/* Tablets and smaller screens */
 @media (max-width: 1024px) {
-  .case-block {
-    grid-template-columns: 1fr;
-    padding: 50px;
-    gap: 50px;
+  .case-container {
+    width: 100%;
+    padding: 0 20px;
   }
 
-  .results {
-    flex-direction: column;
+  .case-block {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 40px 20px;
+  }
+
+  /* Left side (mockups & logo) */
+  .case-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .case-logo {
+    margin-bottom: 20px;
+    width: 70%;
+    height: auto;
+  }
+
+  .case-heading {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 25px;
   }
 
   .email-mockups {
-    height: 350px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .mockup-0,
+  .mockup-1,
+  .mockup-2 {
+    position: absolute;
+    width: 120px;
+  }
+
+  .mockup-0 {
+    left: 0;
+        height: 231px;
+  }
+
+  .mockup-1 {
+    left: 50%;
+    transform: translateX(-50%);
+            height: 247px;
+
+  }
+
+  .mockup-2 {
+    right: 0;
+            height: 275px;
+
+  }
+
+  /* Right side (problem, results, points) */
+  .case-right {
+    align-items: center;
+  }
+
+  .problem-box,
+  .results,
+  .points {
+    width: 100%;
+        /* max-width: 500px; */
+        margin: auto;
+        padding: 10px 4px;
+  }
+
+  .problem-title-text {
+    font-size: 18px;
+  }
+
+  .problem-description {
+    font-size: 14px;
+  }
+  .results {
+    display: flex;
+    gap: 7px;
+}
+.result-card {
+    padding: 15px;
+}
+
+  .result-card h2 {
+    font-size: 32px;
+  }
+
+  .result-card p {
+    font-size: 13px;
+  }
+
+  .point p {
+    font-size: 13px;
+  }
+
+  .check {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .case-block {
+    padding: 30px 15px;
+    gap: 40px;
+  }
+
+  .case-heading {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .email-mockups {
+    height: 250px;
+  }
+
+  .mockup-0,
+  .mockup-1,
+  .mockup-2 {
+    width: 95px;
+  }
+
+  .problem-title-text {
+    font-size: 16px;
+  }
+
+  .problem-description {
+    font-size: 13px;
+  }
+
+  .result-card h2 {
+    font-size: 28px;
+  }
+
+  .result-card p {
+    font-size: 12px;
+  }
+
+  .point p {
+    font-size: 12px;
+  }
+
+  .check {
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+  }
+
+  .case-right {
+    padding: 0;
   }
 }
