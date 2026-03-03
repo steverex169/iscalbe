@@ -1,44 +1,70 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import { SparklesCore } from "../../Component/ui/sparkles";
+import React, { useRef, useEffect } from "react";
 
-const SparkleClean = () => {
-  const [particleCount, setParticleCount] = useState(1400);
+export function SparklesCore({
+  background = "transparent",
+  minSize = 0.4,
+  maxSize = 1.4,
+  particleCount = 400,
+  particleColor = "#ffffff",
+  className = "",
+}) {
+  const canvasRef = useRef(null);
 
   useEffect(() => {
-    // Function to update particle count based on window width
-    const updateParticleCount = () => {
-      if (window.innerWidth <= 768) {
-        setParticleCount(900);
-      } else {
-        setParticleCount(1400);
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+
+    let particles = [];
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      initParticles();
+    };
+
+    const initParticles = () => {
+      particles = [];
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          size: minSize + Math.random() * (maxSize - minSize),
+          speedY: 0.2 + Math.random() * 0.7,
+          opacity: 0.4 + Math.random() * 0.6,
+        });
       }
     };
 
-    updateParticleCount(); // initial check
-    window.addEventListener("resize", updateParticleCount);
+    const draw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = particleColor;
 
-    return () => {
-      window.removeEventListener("resize", updateParticleCount);
+      particles.forEach((p) => {
+        ctx.globalAlpha = p.opacity;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+
+        p.y += p.speedY;
+        if (p.y > canvas.height) p.y = 0;
+      });
+
+      requestAnimationFrame(draw);
     };
-  }, []);
+
+    resize();
+    window.addEventListener("resize", resize);
+    draw();
+
+    return () => window.removeEventListener("resize", resize);
+  }, [particleCount, minSize, maxSize, particleColor]);
 
   return (
-    <div className="relative w-full h-[1200px] overflow-hidden">
-      {/* ⭐ actual particles */}
-      <SparklesCore
-        background="transparent"
-        minSize={2}
-        maxSize={1.5}
-        particleCount={particleCount}
-        particleColor="#ffffff"
-        className="w-full h-full"
-      />
-
-      {/* ⭐ BOTTOM CURVED MASK */}
-      <div className="sparkle-mask"></div>
+    <div
+      style={{ width: "100%", height: "100%", background }}
+      className={className}
+    >
+      <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} />
     </div>
   );
-};
-
-export default SparkleClean;
+}
