@@ -139,17 +139,17 @@ width: 204px !important;
 
 /* CTA BUTTON */
 .navlink .cta {
-  font-family: 'PPTelegraf', sans-serif;
+    font-family: 'PPTelegraf', sans-serif;
     font-weight: 800;
     font-size: 15px;
     width: 115px;
     height: 35px;
-    line-height: 30px;
+    line-height: 35px;
     text-align: center;
     background: #6DFB9F;
-    border: 2px solid #000;
-    border-radius: 40px;
+    border: 1px solid #000;
     transition: 0.2s;
+
 }
 
 .navlink .cta:hover {
