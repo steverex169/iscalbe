@@ -19,50 +19,11 @@ import wa1 from"../Bottom/images/wais1.png";
 import wa2 from"../Bottom/images/wais2.png";
 import wa3 from"../Bottom/images/wais3.png";
 import "../../assets/Css/main.css";
-
+import GrowthArrow from "./GrowthArrow";
 
 
 import React, { useState } from "react";
 
-const StatBar = ({ value }) => {
-  // default 80% if no value
-  const heightPercent = value || 80;
-
-  return (
-    <svg
-      width="20"        // width of the bar
-      height="100"      // total height
-      viewBox="0 0 20 100"
-      className="stat-svg-bar"
-    >
-      {/* Background bar */}
-      <rect
-        x="0"
-        y="0"
-        width="20"
-        height="100"
-        fill="#eee"
-        rx="5"
-        ry="5"
-      />
-      {/* Animated bar */}
-      <rect
-        x="0"
-        y={100 - heightPercent}  // start from bottom
-        width="20"
-        height={heightPercent}
-        fill="rgb(21, 209, 151)"
-        rx="5"
-        ry="5"
-      />
-      {/* Optional arrow at top */}
-      <path
-        d="M10 0 L5 10 L15 10 Z"
-        fill="rgb(21, 209, 151)"
-      />
-    </svg>
-  );
-};
 
 const CaseStudySection = () => {
   const cases = [
@@ -258,14 +219,20 @@ const CaseStudySection = () => {
       {/* RESULTS */}
       <div className="results">
         <div className="result-card">
-          <h2>{item.result1}</h2>
+          <div className="result-value">
+            <h2>{item.result1}</h2>
+            <GrowthArrow />
+          </div>
           <p>{item.result1Text}</p>
         </div>
 
         <div className="result-card">
-          <h2>{item.result2}</h2>
-          <p>{item.result2Text}</p>
-        </div>
+  <div className="result-value">
+    <h2>{item.result2}</h2>
+    <GrowthArrow />
+  </div>
+  <p>{item.result2Text}</p>
+</div>
       </div>
 
       <div className="points">
