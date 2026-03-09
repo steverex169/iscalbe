@@ -86,7 +86,7 @@ const Background = () => {
             <div ref={workRef}><Work /></div>
             <div ref={caseRef}><CaseStudy /></div>
             {/* <div ref={reviewRef}><Review /></div> */}
-            <div ref={testimonialRef}><Testimonial /></div>
+            {/* <div ref={testimonialRef}><Testimonial /></div> */}
             <div ref={lastRef}><LastPart /></div>
         </>
     );
