@@ -20,9 +20,23 @@ import wa2 from"../Bottom/images/wais2.png";
 import wa3 from"../Bottom/images/wais3.png";
 import "../../assets/Css/main.css";
 import GrowthArrow from "./GrowthArrow";
-
+import { useInView } from "react-intersection-observer";
+import CountUp from "react-countup";
 
 import React, { useState } from "react";
+// Scroll-based CountUp wrapper
+const CountUpWrapper = ({ end }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,   // sirf ek baar count kare
+    threshold: 0.3,      // jab 30% visible ho
+  });
+
+  return (
+    <span ref={ref}>
+      {inView ? <CountUp start={0} end={end} duration={2} /> : 0}
+    </span>
+  );
+};
 
 
 const CaseStudySection = () => {
@@ -192,20 +206,23 @@ const CaseStudySection = () => {
 
     {/* LEFT SIDE - EMAIL MOCKUPS */}
     <div className="case-left">
-            <img src={item.logo} alt="" className="case-logo" />
-
-      <p className="case-heading">{item.title}</p>
-      <div className="email-mockups">
-        {item.images.map((img, i) => (
-          <img
-            key={i}
-            src={img}
-            alt=""
-            className={`mockup mockup-${i}`}
-          />
-        ))}
-      </div>
-    </div>
+  <img 
+    src={item.logo} 
+    alt="" 
+    className={`case-logo case-logo-${index}`} 
+  />
+  <p className="case-heading">{item.title}</p>
+  <div className="email-mockups">
+    {item.images.map((img, i) => (
+      <img
+        key={i}
+        src={img}
+        alt=""
+        className={`mockup mockup-${i}`}
+      />
+    ))}
+  </div>
+</div>
 
     {/* RIGHT SIDE - CONTENT */}
     <div className="case-right">
@@ -220,7 +237,9 @@ const CaseStudySection = () => {
       <div className="results">
         <div className="result-card">
           <div className="result-value">
-            <h2>{item.result1}</h2>
+            <h2>
+      <CountUpWrapper end={parseInt(item.result1)} />%
+    </h2>
             <GrowthArrow />
           </div>
           <p>{item.result1Text}</p>
@@ -228,7 +247,9 @@ const CaseStudySection = () => {
 
         <div className="result-card">
   <div className="result-value">
-    <h2>{item.result2}</h2>
+    <h2>
+      <CountUpWrapper end={parseInt(item.result2)} />%
+    </h2>
     <GrowthArrow />
   </div>
   <p>{item.result2Text}</p>
