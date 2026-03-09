@@ -43,106 +43,11 @@ const dashboardImages = [
 ];
 
 
-// 🌟 SPARKLE CORE COMPONENT
-function SparklesCore({
-  background = "transparent",
-  minSize = 1,
-  maxSize = 1.5,
-  particleCount = 400,
-  particleColor = "#ffffff",
-  className = "",
-}) {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    let particles = [];
-
-    const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-      initParticles();
-    };
-
-    const initParticles = () => {
-      particles = [];
-      for (let i = 0; i < particleCount; i++) {
-        particles.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          size: minSize + Math.random() * (maxSize - minSize),
-          speedY: 0.2 + Math.random() * 0.7,
-          opacity: 0.4 + Math.random() * 0.6,
-        });
-      }
-    };
-
-    const draw = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = particleColor;
-
-      particles.forEach((p) => {
-        ctx.globalAlpha = p.opacity;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fill();
-
-        p.y += p.speedY;
-        if (p.y > canvas.height) p.y = 0;
-      });
-
-      requestAnimationFrame(draw);
-    };
-
-    resize();
-    window.addEventListener("resize", resize);
-    draw();
-
-    return () => window.removeEventListener("resize", resize);
-  }, [particleCount, minSize, maxSize, particleColor]);
-
-  return (
-    <div className={className}>
-      <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} />
-    </div>
-  );
-}
-
-
 // 🌟 CREATIVE COMPONENT
 const Creative = () => {
   return (
     <div className="creative-wrapper">
-      <div className="mainspark">
-        <div className="sparkle-container">
-          {/* Sparkles inside Creative.jsx, no imports */}
-          <SparklesCore />
-
-          <div className="brand-slider-wrapper">
-            <div className="brand-slider">
-              <img src={Jnbreakable} style={{ height: "40px" }} alt="" />
-              <img src={Fragrant} style={{ height: "40px" }} alt="" />
-              <img src={Conzuri} style={{ height: "32px" }} alt="" />
-              <img src={Selene_black} style={{ height: "32px" }} alt="" />
-              <img src={Soothe} style={{ height: "32px" }} alt="" />
-              <img src={Blowbrusher} style={{ height: "32px" }} alt="" />
-              <img src={li} style={{ height: "100px", marginTop: "-21px" }} alt="" />
-              <img src={l2} style={{ height: "40px" }} alt="" />
-              <img src={l4} style={{ height: "40px" }} alt="" />
-              <img src={l11} style={{ height: "40px" }} alt="" />
-              <img src={l12} style={{ height: "40px" }} alt="" />
-              <img src={l13} style={{ height: "40px" }} alt="" />
-              <img src={l14} style={{ height: "40px" }} alt="" />
-              <img src={l22} style={{ height: "40px" }} alt="" />
-              <img src={l33} style={{ height: "40px" }} alt="" />
-              <img src={l44} style={{ height: "40px" }} alt="" />
-            </div>
-          </div>
-        </div>
-        <div className="testmask w-full h-[200px] bg-red-500"></div>
-      </div>
-
+      
       <section className="Creative">
         <h2 className="creative-h2">Numbers never lie...</h2>
         <p className="creative-p">
