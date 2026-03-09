@@ -10,9 +10,9 @@ const GrowthArrow = () => {
       <defs>
         {/* gradient */}
         <linearGradient id="growthGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#15d197" />
-          <stop offset="50%" stopColor="#42f5c5" />
-          <stop offset="100%" stopColor="#15d197" />
+          <stop offset="0%" stopColor="#6DFB9F" />
+          <stop offset="50%" stopColor="#6DFB9F" />
+          <stop offset="100%" stopColor="#6DFB9F" />
         </linearGradient>
       </defs>
 
