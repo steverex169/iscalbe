@@ -66,11 +66,10 @@
     flex-shrink: 0;
     background: #6DF89F;
     border: 1px solid #000;
-    border-radius: 6px;
+    border-radius: 30px;
     text-decoration: none;
     padding: 20px 0;
     font-family: 'PPTelegraf', sans-serif;
-
 }
 
 .top-hero>.top-row-img {
@@ -339,6 +338,7 @@
         background: #6DF89F;
         text-decoration: none;
         padding: 20px 0;
+        border-radius: 30px;
     }
 }
 
