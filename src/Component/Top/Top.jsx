@@ -27,6 +27,8 @@ import img1112 from "../Bottom/images/fimg44.png";
 import img1113 from "../Bottom/images/fimg22.png";
 import img1114 from "../Bottom/images/fimg11.png";
 import img114 from "../Bottom/images/fimg33.png";
+import CountUp from "react-countup";
+
 
 const Top = () => {
     return (
@@ -51,16 +53,22 @@ const Top = () => {
       <div className="stats-section">
 
         <div className="stat-box">
-          <h3>83+</h3>
-          <p>Brands Partnered With</p>
-        </div>
+  <h3>
+    <CountUp start={0} end={83} duration={2} />+
+  </h3>
+  <p>Brands Partnered With</p>
+</div>
 
-        <div className="stat-box">
-          <h3>$7,698,870<span className="green">+</span></h3>
-          <p>Total revenue Generated</p>
-        </div>
+<div className="stat-box">
+  <h3>
+    $<CountUp start={0} end={7698870} duration={3} separator="," />
+    <span className="green">+</span>
+  </h3>
+  <p>Total revenue Generated</p>
+</div>
 
       </div>
+      
       <div className="mainspark">
               <div className="sparkle-container">
       
@@ -72,7 +80,7 @@ const Top = () => {
                     <img src={Selene_black} style={{ height: "32px" }} alt="" />
                     <img src={Soothe} style={{ height: "32px" }} alt="" />
                     <img src={Blowbrusher} style={{ height: "32px" }} alt="" />
-                    <img src={li} style={{ height: "100px", marginTop: "-21px" }} alt="" />
+                    <img src={li} style={{ height: "100px", marginTop: "-34px" }} alt="" />
                     <img src={l2} style={{ height: "40px" }} alt="" />
                     <img src={l4} style={{ height: "40px" }} alt="" />
                     <img src={l11} style={{ height: "40px" }} alt="" />
