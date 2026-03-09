@@ -113,12 +113,15 @@ body {
 
 .hero>.hero-img-6 {
     position: absolute;
-    width: 209px;
-    height: 117px;
-    transform: rotate(-13.464deg);
-    top: 90%;
-    left: 0px;
+    width: 177.761px;
+    height: 99.99px;
+    flex-shrink: 0;
+    aspect-ratio: 177.76/99.99;
+    top: 35%;
+    left: 30px;
     filter: blur(2px);
+    transform: rotate(-13.464deg);
+    z-index: -1;
 }
 
 @media only screen and (max-width: 320px) {
@@ -471,27 +474,27 @@ body {
     }
 
     .hero>.hero-img-1 {
-        top: 8px;
-        right: 10%;
+        top: 18px;
+        right: 12%;
     }
 
     .hero>.hero-img-2 {
-        top: 40%;
-        left: 5%;
+        top: 24%;
+        left: 10%;
     }
 
     .hero>.hero-img-3 {
-        top: 39%;
-        right: 10px;
-        width: 357.761px;
-        height: 201.99px;
+        top: 28%;
+        right: 127px;
+        width: 247px;
+        height: 138px;
     }
 
     .hero>.hero-img-4 {
-        top: 53%;
-        left: 0px;
-        width: 350.761px;
-        height: 201.99px;
+        top: 40%;
+        left: 116px;
+        width: 247px;
+        height: 138px;
     }
 
     .hero>.hero-img-7 {
@@ -513,19 +516,21 @@ body {
         width: 209px;
         height: 117px;
         transform: rotate(-13.464deg);
-        top: 75%;
-        right: 8%;
+        top: 56%;
+        right: 13%;
         filter: blur(2px);
     }
 
     .hero>.hero-img-6 {
-        position: absolute;
+        /* position: absolute;
         width: 180px;
         height: 100px;
         transform: rotate(13.464deg);
-        top: 100%;
+        top: 78%;
         left: 60px;
-        filter: blur(2px);
+        filter: blur(2px); */
+        top: 62%;
+        left: 174px;
     }
 }
 
