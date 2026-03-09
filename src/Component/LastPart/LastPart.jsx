@@ -7,7 +7,6 @@ import foo3 from "../Bottom/images/foo3.png";
 import "../../assets/Css/main.css";
 
 
-
 import "./LastPart.css";
 
 const LastPart = () => {
@@ -54,12 +53,12 @@ const LastPart = () => {
 
       {/* RIGHT SIDE - TYPEFORM */}
       <div className="lastPart-right">
-        <Widget
-          id="YOUR_TYPEFORM_ID"
-          style={{ width: "100%", height: "500px", borderRadius: "20px" }}
-          className="typeformBox"
-        />
-      </div>
+  <Widget
+    id="ahBNT9"
+    style={{ width: "100%", height: "500px", borderRadius: "20px" }}
+    className="typeformBox"
+  />
+</div>
 
     </section>
   );
