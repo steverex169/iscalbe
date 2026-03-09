@@ -310,8 +310,9 @@
 .stat-box {
   background: #fff;
   border-radius: 18px;
-  padding: 24px;
+  padding: 10px;
   flex: 1;
+  text-align: center;
 }
 
 .stat-number {
@@ -326,9 +327,9 @@
 }
 
 .stat-box p {
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 8px;
+      font-size: 25px;
+    font-weight: 400;
+    margin-top: 8px;
 }
 
 /* BULLETS */
@@ -471,9 +472,59 @@
 
 
 
+.result-value{
+display:flex;
+align-items:center;
+gap:6px;
+}
 
+.growth-arrow {
+  overflow: visible;
+}
 
+/* line draw */
+.arrow-line {
+  stroke-dasharray: 120;
+  stroke-dashoffset: 120;
+  animation: drawLine 1.8s ease forwards;
+}
 
+/* arrow head draw */
+.arrow-head {
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+  animation: drawHead 1.8s ease forwards;
+}
+
+/* moving highlight */
+.arrow-line {
+  animation:
+    drawLine 1.8s ease forwards,
+    flow 3s linear infinite;
+}
+
+/* animations */
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawHead {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flow {
+  0% {
+    stroke-dashoffset: 120;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
 /* MAIN BLOCK */
 .case-block {
