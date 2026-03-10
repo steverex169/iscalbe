@@ -80,7 +80,10 @@ const Header = ({ refs }) => {
         <a onClick={() => handleScroll('work')}>What we do</a>
         <a onClick={() => handleScroll('case')}>Case Study</a>
         {/* <a onClick={() => handleScroll('testimonial')}>Testimonials</a> */}
-        <a onClick={() => handleScroll('last')} className="cta">Let’s Work</a>
+        {/* <a onClick={() => handleScroll('last')} className="cta">Let’s Work</a> */}
+        <button className="ctaBtn1">
+  Book Now →
+</button>
       </div>
     </header>
   );
