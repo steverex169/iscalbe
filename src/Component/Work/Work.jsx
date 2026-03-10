@@ -80,7 +80,7 @@ const Work = () => {
               Be Profitable
             </h1>
             <button className="promo-btn">
-              Book a Free Strategy Call Today →
+              Book Your Free Consultation →
             </button>
           </div>
 
