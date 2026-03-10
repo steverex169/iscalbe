@@ -80,10 +80,10 @@ const Background = () => {
                 <Top />
             </section>
 
-            <div ref={creativeRef}><Creative /></div>
             <div ref={portfolioRef}><Portfolio /></div>
             <div ref={bigVideoRef}><VideoSection /></div>
             <div ref={workRef}><Work /></div>
+            <div ref={creativeRef}><Creative /></div>
             <div ref={caseRef}><CaseStudy /></div>
             {/* <div ref={reviewRef}><Review /></div> */}
             {/* <div ref={testimonialRef}><Testimonial /></div> */}
