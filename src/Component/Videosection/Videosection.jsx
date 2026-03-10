@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Videosection.css";
-import gsap from "gsap";
 import primelogo from "../Bottom/images/primel.png";
 import "../../assets/Css/main.css";
 
 
+import gsap from "gsap";
 
 const VideoSection = () => {
   const videoRef = useRef(); // ONLY on <video>
@@ -47,20 +47,34 @@ const VideoSection = () => {
 
   return (
     <section className="video-section">
-                      <div className="video-header">
-                    
-                    <h1 className="video-title">
-    <img
-    src={primelogo}
-    alt="PRIME Logo"
-    className="prime-logo"
-  />’s Email, Built Step by Step.
+      <div className="video-header">
 
-</h1>
-                    <p>
-                        We recreated PRIME’s email and walk you through the design process, step by step, exactly how our team would build it for a client.
-                    </p>
-                </div>
+        <h1 className="video-title">
+
+          <img
+            src={primelogo}
+            alt="PRIME Logo"
+            className="prime-logo"
+          />
+
+          <span
+            style={{
+              fontSize: "20px",
+              marginRight: "3px",
+              marginTop: "-18px",
+              display: "inline-block"
+            }}
+          >
+            ’s
+          </span>
+
+          <span>Email, Built Step by Step.</span>
+
+        </h1>
+        <p>
+          We recreated PRIME’s email and walk you through the design process, step by step, exactly how our team would build it for a client.
+        </p>
+      </div>
       <div
         className="video-container"
         onMouseEnter={() => setShowSpeedOptions(true)}
@@ -73,6 +87,7 @@ const VideoSection = () => {
           muted
           loop
           playsInline
+          preload="auto"
           className="center-video"
           onLoadedMetadata={handleVideoReady}
           onCanPlay={handleVideoReady}
