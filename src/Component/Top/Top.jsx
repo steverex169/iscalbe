@@ -60,7 +60,7 @@ const Top = () => {
 
         <div className="stat-box">
   <h3>
-    <CountUp start={0} end={83} duration={2} />+
+    <CountUp start={0} end={83} duration={2} /> <span className="green">+</span>
   </h3>
   <p>Brands Partnered With</p>
 </div>
