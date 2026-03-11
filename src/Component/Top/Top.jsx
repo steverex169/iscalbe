@@ -43,7 +43,13 @@ const Top = () => {
                 {/* <h2 className='top-hero-h2'>Spend.</h2> */}
                 <p className='top-hero-p'>Most brands see results within 
                     60 days or less.</p>
-                <a href="https://calendly.com/moheearum7/30min" className='top-hero-cta'>Schedule Your Free Consultation</a>
+                <a
+                  href="https://calendly.com/moheearum7/30min"
+                  className="top-hero-cta"
+                >
+                  Schedule Your Free Consultation
+                  <span className="cta-dot"></span>
+                </a>
                 <span className='top-hero-span'>10+ Years Experience with </span>
                 <div className="top-row-img">
                     <img src={Logo1} alt="" className='logo1' />
