@@ -164,15 +164,19 @@
 
 .promo-btn {
     background-color: #6dfb9f;
-    color: #000;
     font-weight: 800;
     font-size: 16px;
-    padding: 15px 13px;
-    border: 1px solid #000;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    border-radius: 40px;
     font-family: 'PPTelegraf', sans-serif;
+
+
+    padding: 15px 34px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    color: #000;
+    width: fit-content;
+    transition: 0.3s ease;
 }
 
 .promo-btn:hover {
