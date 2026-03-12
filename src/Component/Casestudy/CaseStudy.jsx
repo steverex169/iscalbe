@@ -6,7 +6,7 @@ import email4 from "../Bottom/images/email11.png";
 import emailz from "../Bottom/images/email22.png";
 import emailwest from "../Bottom/images/emailwest.png";
 import se from"../Bottom/images/se.png";
-import so from"../Bottom/images/so.png";
+import so from"../Bottom/images/Soothie.png";
 import wa from"../Bottom/images/waaa.png";
 import dark from"../Bottom/images/darkl.png";
 import sooth1 from"../Bottom/images/sooth1.png";
