@@ -56,7 +56,7 @@ const Creative = () => {
         </p>
 
         <div className="row-video-card">
-          <VideoBox link="/videos/video1.mp4" title="RGBA-Lights" />
+          <VideoBox link="/videos/video1.mp4"/>
         </div>
 
         {/* Dashboard Cards */}
