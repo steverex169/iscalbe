@@ -35,11 +35,12 @@ import img114 from "../Bottom/images/fimg33.png";
 const dashboardImages = [
   [fimg1],
   [img114],
-  [img1114],
   [img111],
   [fimg2],
   [img1113],
   [img1112],
+    [img1114],
+
 ];
 
 
