@@ -41,8 +41,9 @@ const Top = () => {
                 Spend.
                 </h2>
                 {/* <h2 className='top-hero-h2'>Spend.</h2> */}
-                <p className='top-hero-p'>Most brands see results within 
-                    60 days or less.</p>
+                                <p className='top-hero-p'>
+  Most brands see results within <span className="no-break">60 days or less</span>.
+</p>
                 <a
                   href="https://calendly.com/moheearum7/30min"
                   className="top-hero-cta"
