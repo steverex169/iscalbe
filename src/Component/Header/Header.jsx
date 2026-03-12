@@ -81,7 +81,10 @@ const Header = ({ refs }) => {
         <a onClick={() => handleScroll('case')}>Case Study</a>
         {/* <a onClick={() => handleScroll('testimonial')}>Testimonials</a> */}
         {/* <a onClick={() => handleScroll('last')} className="cta">Let’s Work</a> */}
-        <button className="ctaBtn1">
+        <button
+  className="ctaBtn1"
+  onClick={() => window.open("https://calendly.com/moheearum7/30min", "_blank")}
+>
   Book Now →
 </button>
       </div>
